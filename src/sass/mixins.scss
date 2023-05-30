@@ -1,0 +1,19 @@
+/* Mixin */
+
+@mixin overlay {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
