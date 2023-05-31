@@ -1,0 +1,49 @@
+// Hero
+
+.hero {
+  padding-bottom: 60px;
+}
+
+.hero__wrapper {
+  &--index {
+    background-image: url("../../images/generalplan.jpg");
+    background-repeat: no-repeat;
+    background-position: center 309px;
+    padding-bottom: 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/generalplan@2x.jpg");
+      background-size: 90% 386px;
+    }
+
+    @include tablet {
+      background-image: url("../../images/generalplan-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/generalplan-tablet@2x.jpg");
+      }
+    }
+
+    @include desktop {
+      background-image: url("../../images/generalplan-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/generalplan-desktop@2x.jpg");
+        background-size: 1400px auto;
+      }
+    }
+  }
+}
+
+// Title
+.hero__title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1em;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+// Button

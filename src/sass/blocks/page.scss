@@ -1,0 +1,15 @@
+// Page
+
+.page {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+.page__body {
+  font-family: "Akrobat", "Aria", sans-serif;
+  min-height: 100%;
+  min-width: 320px;
+  margin: 0;
+  background-color: $basic-black;
+  color: $basic-white;
+}

@@ -1,0 +1,16 @@
+/* Box Model */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Images */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

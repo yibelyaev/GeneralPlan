@@ -1,1 +1,21 @@
 // Global
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./reboot.scss";
+
+// Blocks
+
+@import "./blocks/wrapper.scss";
+@import "./blocks/button.scss";
+@import "./blocks/item-button.scss";
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/about.scss";
+@import "./blocks/direction.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/cases.scss";

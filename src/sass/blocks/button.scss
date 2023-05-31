@@ -1,0 +1,17 @@
+// Button
+
+.button {
+  /* stylelint-disable-next-line */
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: $basic-orange;
+  border-radius: 20px;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}

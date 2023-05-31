@@ -46,7 +46,7 @@ const scripts = () => {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('src/images/*.{png,jpg}')
+  return gulp.src('src/images/*.{png,jpg,svg}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/images'))
 }
@@ -89,6 +89,8 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'src/fonts/*.{woff2,woff}',
+    'src/*.ico',
+    'src/manifest.json'
   ], {
     base: 'src'
   })

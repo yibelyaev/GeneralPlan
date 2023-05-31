@@ -1,0 +1,28 @@
+// Menu
+
+.menu {
+  display: grid;
+}
+
+
+// Button
+
+.menu__button {
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  justify-self: end;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+// List
+
+.menu__list {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}

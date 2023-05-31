@@ -1,0 +1,31 @@
+// About
+
+.about {
+  padding-bottom: 60px;
+}
+
+// Info
+
+.about__info {
+  position: relative;
+}
+
+// Title
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+// Subtitle
+
+
+.text {
+  &--mark {
+    background-color: $basic-orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+  }
+}
