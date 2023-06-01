@@ -8,8 +8,18 @@
   position: relative;
 }
 
+// heading
+
+// Title
+
 .cases__title {
   margin-bottom: 30px;
+}
+
+// Subtitle
+
+.cases__subtitle {
+  margin-bottom: 20px;
 }
 
 
@@ -17,8 +27,22 @@
 
 .cases__list {
   @include overlay;
+  padding-bottom: 20px;
+  position: relative;
 }
 
+
+// Item
+
+.cases__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(221, 160, 221);
+
+  &--design {
+    display: none;
+  }
+}
 
 .cases__item-info {
   display: flex;
@@ -64,4 +88,11 @@
 
 .cases__item-button {
   margin-right: auto;
+}
+
+// Button
+
+.cases__button {
+  margin-top: 31px;
+  width: 100%;
 }

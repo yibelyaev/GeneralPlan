@@ -1,0 +1,121 @@
+// Project
+
+.project {
+  padding-bottom: 60px;
+}
+
+// Title
+
+.project__title {
+  margin-bottom: 20px;
+}
+
+// Info
+
+.project__info {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+// List
+
+.project__list {
+  @include overlay;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  display: grid;
+  gap: 7px;
+  margin-bottom: 30px;
+}
+
+// Item
+
+.project__item {
+  display: flex;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+// Link
+
+.project__link {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid $basic-orange;
+  border-radius: 102px;
+
+  &--current {
+    background-color: $basic-orange;
+  }
+}
+
+// Product
+
+.project__list-product {
+  @include overlay;
+  font-family: "Inter", sans-serif;
+  display: grid;
+  row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+// Item
+
+.project__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(221, 160, 221);
+}
+
+.project__product img {
+  margin-bottom: 14px;
+}
+
+// Info
+
+.project__product-info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 20px 16px 40px 20px;
+}
+
+// Heading
+
+.project__product-heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+
+// Description
+
+.project__product-description {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3em;
+  color: inherit;
+  opacity: 0.7;
+  padding-right: 45px;
+
+  &--idealist {
+    padding-right: 0;
+  }
+}
+
+// Button
+
+.project__button {
+  width: 100%;
+}
