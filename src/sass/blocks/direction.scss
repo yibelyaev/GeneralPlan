@@ -2,6 +2,10 @@
 
 .direction {
   padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 90px;
+  }
 }
 
 // Title
@@ -15,15 +19,20 @@
 
 .direction__list {
   @include overlay;
-  /* stylelint-disable-next-line */
+  display: grid;
   font-family: "Inter", sans-serif;
   margin-bottom: 30px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Item
 
 .direction__item {
   position: relative;
+  border: 1px solid rgb(221, 160, 221);
 }
 
 // .line__hi::after {

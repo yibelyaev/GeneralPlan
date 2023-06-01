@@ -76,14 +76,14 @@
     <section class="hero">
       <div class="hero__wrapper wrapper hero__wrapper--index">
         <h1 class="hero__title">«GENERALPLAN» – design of territories of any scale</h1>
-        <a class="hero__button button" href="#">
+        <a class="hero__button button" href="#" rel="noopener noreferrer">
           Discuss the project
         </a>
       </div>
     </section>
     <section class="about" id="about">
       <div class="about__wrapper wrapper">
-        <h2 class="about__title">01/ about</h2>
+        <h2 class="about__title title">01/ about</h2>
         <div class="about__info">
           <span class="text text--mark"></span>
           <p class="about__subtitle subtitle">
@@ -264,30 +264,34 @@
         </ul>
         <ul class="project__list-product">
           <li class="project__product">
-            <div class="project__product-info">
               <h3 class="project__product-heading">Project «Yanino»</h3>
-              <p class="project__product-description">YanilA Drive is a comfortable modern residential quarter in the Vsevolozhsky district of the Leningrad region.</p>
+              <p class="project__product-descriptio">YanilA Drive is a comfortable modern residential quarter in the Vsevolozhsky district of the Leningrad region.</p>
+            <div class="project__images">
               <picture>
+                <source type="image/webp" media="(min-width: 640px)" srcset="./images/project-tablet-1.webp 1x, ./images/project-tablet-1@2x.webp 2x">
                 <source type="image/webp" srcset="./images/project-1.webp 1x, ./images/project-1@2x.webp 2x">
-                <img src="./images/project-1.jpg" srcset="./images/project-1@2x.jpg 2x" decoding="async" width="264" height="174" alt="">
+                <source media="(min-width: 640px)" srcset="./images/project-tablet-1.jpg 1x, ./images/project-tablet-1@2x.jpg 2x">
+                <img src="./images/project-1.jpg" srcset="./images/project-1@2x.jpg 2x" decoding="async" alt="">
               </picture>
+            </div>
               <a class="project__item-button item-button" href="#">
                 Learn more
               </a>
-            </div>
           </li>
           <li class="project__product">
-            <div class="project__product-info">
               <h3 class="project__product-heading">Project  «Idealist»</h3>
               <p class="project__product-description project__product-description--idealist">The Idealist Club House is located in the historical center of St. Petersburg, between the embankment of the Obvodny Canal and Moskovsky Prospekt.</p>
+              <div class="project__images">
               <picture>
+                <source type="image/webp" media="(min-width: 640px)" srcset="./images/project-tablet-2.webp 1x, ./images/project-tablet-2@2x.webp 2x">
                 <source type="image/webp" srcset="./images/project-2.webp 1x, ./images/project-2@2x.webp 2x">
-                <img src="./images/project-2.jpg" srcset="./images/project-2@2x.jpg 2x" decoding="async" width="264" height="174" alt="">
+                <source media="(min-width: 640px)" srcset="./images/project-tablet-2.jpg 1x, ./images/project-tablet-2@2x.jpg 2x">
+                <img src="./images/project-2.jpg" srcset="./images/project-2@2x.jpg 2x" decoding="async" alt="">
               </picture>
+            </div>
               <a class="project__item-button item-button" href="#">
                 Learn more
               </a>
-            </div>
           </li>
         </ul>
         <a class="project__button button" href="#">
@@ -327,7 +331,6 @@
             <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои<br>фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__author-name">LSR Group</cite>
           </blockquote> -->
-
       </div>
     </section>
     <section class="values" id="values">
@@ -341,6 +344,124 @@
         </div>
       </div>
     </section>
+    <section class="customers" id="customers">
+      <div class="customers__wrapper wrapper">
+        <h2 class="customers__title title">08/ customers</h2>
+        <ul class="customers__list product-list">
+          <h3 class="customers__heading">architectural studio</h3>
+          <li class="customers__item">
+            <a class="customers__link" href="#" aria-label="Studio-44">
+              <svg width="50" height="55">
+                <use class="customers__icon" xlink:href="images/sprite.svg#studio-44">
+              </svg>
+            </a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link customers__link--buro" href="#" aria-label="Buro"></a>
+          </li>
+        </ul>
+        <ul class="customers__list product-list customers__list--developers">
+          <h3 class="customers__heading">Developers</h3>
+          <li class="customers__item">
+            <a class="customers__link customers__link--lsp" href="#" aria-label="Studio-44">
+              <svg width="73" height="23">
+                <use class="customers__icon" xlink:href="images/sprite.svg#lsp">
+              </svg>
+            </a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link customers__link--bonava" href="#" aria-label="bonava">
+              <svg width="52" height="30">
+                <use class="customers__icon" xlink:href="images/sprite.svg#bonava">
+              </svg>
+            </a>
+          </li>
+          <li class="customers__item">
+            <a class="customers__link customers__link--cds" href="#" aria-label="cds">
+              <svg width="120" height="25">
+                <use class="customers__icon-cdc" xlink:href="images/sprite.svg#cds">
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="subscribe" id="subscribe">
+      <div class="subscribe__wrapper wrapper">
+        <h2 class="visually-hidden">Subcribe</h2>
+        <div class="subscribe__info">
+          <span class="text text--mark"></span>
+          <p class="subscribe__subtitle subtitle">
+            Leave a request for the development of the project and we will contact you
+          </p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__field">
+              <label class="form__label" for="name">
+                <p class="form__heading">First name, Last Name *</p>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="telephone">
+                <p class="form__heading">Telephone</p>
+                <input class="form__input" type="tel" name="telephone" id="telephone" placeholder="Telephone">
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="email">
+                <p class="form__heading">Email</p>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Email">
+              </label>
+            </div>
+            <div class="form__field">
+              <label class="visually-hidden" for="wish">Wish</label>
+              <textarea class="form__input form__textarea" name="wish" id="wish" cols="30" rows="10" placeholder="I want to order a project"></textarea>
+            </div>
+            <fieldset class="form__checkbox">
+              <label class="form__checkbox-label">
+                <input class="visually-hidden form__checkbox-input" type="checkbox" name="Yes" id="Yes" required>
+                <span class="form__checkbox-input form__checkbox-input--mark"></span>
+                <span class="form__checkbox-lead">By clicking the "Submit" button, you agree to the Privacy Policy of Personal Data Processing</span>
+              </label>
+            </fieldset>
+            <button class="form__button button" type="submit">submit</button>
+        </form>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo logo">
+        <a class="logo__link" href="">
+          <img src="./images/logo.svg" alt="Логотип Генплан.">
+        </a>
+      </div>
+      <div class="footer__address">
+        <p class="footer__address footer__address--city">St. Petersburg, Pulkovskoe highway, 30, room 4</p>
+        <p>
+          <a class="footer__link footer__link--phone" href="tel:88003021976" rel="noopener noreferrer">
+            8 800 302-19-76
+          </a>
+          </p>
+          <p>
+            <a class="footer__link footer__link--mail" href="mailto:contact@genplan.ooo" rel="noopener noreferrer">
+              contact@genplan.ooo
+            </a>
+            </p>
+      </div>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">telegram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">behance</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copy">© 2007–2023 GeneralPlan</p>
+    </div>
+  </footer>
 </body>
 </html>

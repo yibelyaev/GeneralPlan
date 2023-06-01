@@ -2,6 +2,10 @@
 
 .cases {
   padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 90px;
+  }
 }
 
 .cases__info {
@@ -27,8 +31,13 @@
 
 .cases__list {
   @include overlay;
-  padding-bottom: 20px;
   position: relative;
+  display: grid;
+  padding-bottom: 20px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
@@ -41,6 +50,10 @@
 
   &--design {
     display: none;
+
+    @include tablet {
+      display: flex;
+    }
   }
 }
 

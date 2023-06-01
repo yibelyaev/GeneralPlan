@@ -11,4 +11,9 @@
   opacity: 0.9;
   text-align: left;
   text-indent: 60px;
+
+  @include tablet {
+    font-size: 42px;
+    text-indent: 90px;
+  }
 }

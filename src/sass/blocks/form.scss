@@ -1,0 +1,114 @@
+// Form
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  border: 1px solid rgb(221, 160, 221);
+  font-family: "Inter", sans-serif;
+}
+
+// Field
+
+.form__field {
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 13px;
+  }
+}
+
+// Heading
+
+.form__heading {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1em;
+  color: inherit;
+}
+
+// Label
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+// Input
+
+.form__input {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.1em;
+  border: 1px solid $basic-white;
+  background: transparent;
+  padding: 11px;
+  color: inherit;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.form__input::placeholder {
+  opacity: 0.3;
+  color: inherit;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
+  height: 88px;
+}
+
+// Checbox
+
+.form__checkbox {
+  @include overlay;
+  border: none;
+  margin-bottom: 8px;
+}
+
+.form__checkbox-label {
+  display: flex;
+  position: relative;
+  padding-left: 25px;
+}
+
+.form__checkbox-input {
+  &--mark {
+    position: absolute;
+    left: 1px;
+    background-color: transparent;
+    border: 1px solid $basic-white;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.form__checkbox-input:checked + .form__checkbox-input--mark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 6px;
+  height: 4px;
+  border-bottom: 1px solid $basic-white;
+  border-left: 1px solid $basic-white;
+}
+
+// Lead
+
+.form__checkbox-lead {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: inherit;
+  opacity: 0.7;
+}

@@ -4,12 +4,17 @@
   &::after {
     content: "";
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    display: block;
     bottom: 0;
     width: 100%;
     height: 4px;
     background: linear-gradient(to right, #656565 25%, #bdbddb 25% 100%);
     border-radius: 100px;
+  }
+
+  @include tablet {
+    &::after {
+      display: none;
+    }
   }
 }

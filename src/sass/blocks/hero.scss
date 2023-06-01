@@ -33,10 +33,16 @@
       }
     }
   }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 // Title
 .hero__title {
+  position: relative;
   margin: 0;
   margin-bottom: 17px;
   font-weight: 700;
@@ -44,6 +50,23 @@
   line-height: 1em;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+
+  @include tablet {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 0.03em;
+    grid-column: 3 span;
+    margin: 0;
+  }
 }
 
 // Button
+.hero__button {
+  @include tablet {
+    max-width: 200px;
+    justify-self: end;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+  }
+}

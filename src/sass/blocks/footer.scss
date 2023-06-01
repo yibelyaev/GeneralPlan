@@ -1,0 +1,92 @@
+// Footer
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border: 1px solid rgb(221, 160, 221);
+}
+
+.footer__container {
+  width: 300px;
+  margin: auto;
+  padding: 0;
+}
+
+// Logo
+
+.footer__logo {
+  margin-bottom: 35px;
+}
+
+// Addres
+
+.footer__address {
+  margin-bottom: 35px;
+
+  &--city::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/city.svg");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 20px;
+    left: 1px;
+  }
+}
+
+.footer__address p {
+  padding-left: 20px;
+  position: relative;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &--phone::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/phone.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 15px;
+    left: 1px;
+  }
+
+  &--mail::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/mail.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 11px;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.footer__social {
+  margin-bottom: 35px;
+}
+
+.footer__copy {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4em;
+  text-align: left;
+  color: inherit;
+}
