@@ -32,44 +32,7 @@
 
 .direction__item {
   position: relative;
-  border: 1px solid rgb(221, 160, 221);
 }
-
-// .line__hi::after {
-//   content: "";
-//   position: absolute;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   width: calc(100% - 40px);
-//   box-shadow: 0 0 0 1px #9b9b9b;
-// }
-
-// .line__hi::before {
-//   content: "";
-//   position: absolute;
-//   width: calc(100% - 40px);
-//   box-shadow: 0 0 0 1px #9b9b9b;
-// }
-
-// .direction__item::before {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: calc(100% - 40px);
-//   left: 50%;
-//   transform: translateX(-50%);
-//   border-top: 1px solid #9b9b9b;
-// }
-
-// .direction__item:last-child::after {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: calc(100% - 40px);
-//   left: 50%;
-//   transform: translateX(-50%);
-//   border-top: 1px solid #9b9b9b;
-// }
 
 // Info
 

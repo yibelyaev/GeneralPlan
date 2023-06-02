@@ -28,6 +28,11 @@
 
 .reviews__list {
   font-family: "Inter", sans-serif;
+  display: grid;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 // Item

@@ -25,7 +25,7 @@
     <nav class="header__menu menu">
       <button class="menu__button">
         <svg class="menu__icon" width="28" height="28">
-          <use class="menu__icon-menu" xlink:href="images/sprite.svg#menu">
+          <use class="menu__icon-menu" xlink:href="images/sprite.svg#menu"></use>
         </svg>
       </button>
       <ul class="menu__list">
@@ -85,8 +85,7 @@
       <div class="about__wrapper wrapper">
         <h2 class="about__title title">01/ about</h2>
         <div class="about__info">
-          <span class="text text--mark"></span>
-          <p class="about__subtitle subtitle">
+          <p class="about__subtitle subtitle subtitle--mark">
             The «GeneralPlan» company is a specialized company established in 2012. The uniqueness of our company lies in the experience of our engineers specializing in the development of project documentation
           </p>
         </div>
@@ -97,8 +96,8 @@
         <h2 class="direction__title title">02/ area of work</h2>
         <ul class="direction__list">
           <li class="direction__item">
-            <span class="line__hi"></span>
-            <span class="line__wi"></span>
+            <span class="line line__bottom line__right"></span>
+            <span class="line line__top line__left"></span>
             <div class="direction__info">
               <h3 class="direction__item-title">Landscape design</h3>
               <p class="direction__item-description">One of the activities of our company is the development of urban landscape architecture projects.</p>
@@ -108,6 +107,8 @@
             </div>
           </li>
           <li class="direction__item">
+            <span class="line line__bottom line__right"></span>
+            <span class="line line__top line__left"></span>
             <div class="direction__info">
               <h3 class="direction__item-title">Design of external engineering networks</h3>
               <p class="direction__item-description">The design of external engineering networks is a key stage in the construction of residential and non residential facilities.</p>
@@ -117,6 +118,8 @@
             </div>
           </li>
           <li class="direction__item">
+            <span class="line line__bottom line__right"></span>
+            <span class="line line__top line__left"></span>
             <div class="direction__info">
               <h3 class="direction__item-title">general plan</h3>
               <p class="direction__item-description">The general plan is an integral part of each project, on the basis of which planning, construction, reconstruction and other types of urban development of territories are carried out.</p>
@@ -135,8 +138,7 @@
       <div class="advantages__wrapper wrapper">
         <h2 class="advantages__title title">03/ benefit</h2>
         <div class="advantages__info">
-          <span class="text text--mark"></span>
-          <p class="advantages__subtitle subtitle">
+          <p class="advantages__subtitle subtitle subtitle--mark">
             We develop projects of various scales and purposes: from a transformer substation to a residential area
           </p>
         </div>
@@ -204,8 +206,7 @@
       <div class="cases__wrapper wrapper">
         <h2 class="cases__title title">04/ cases</h2>
         <div class="cases__info">
-          <span class="text text--mark"></span>
-          <p class="cases__subtitle subtitle">
+          <p class="cases__subtitle subtitle subtitle--mark">
             We develop projects of various scales and purposes: from a transformer substation to a residential area
           </p>
         </div>
@@ -246,8 +247,7 @@
       <div class="project__wrapper wrapper">
         <h2 class="project__title title">05/ projects</h2>
         <div class="project__info">
-          <span class="text text--mark"></span>
-          <p class="project__subtitle subtitle">
+          <p class="project__subtitle subtitle subtitle--mark">
             We work in the market of Moscow, St. Petersburg and other regions of Russia. We have developed more than 1000 projects
           </p>
         </div>
@@ -265,7 +265,7 @@
         <ul class="project__list-product">
           <li class="project__product">
               <h3 class="project__product-heading">Project «Yanino»</h3>
-              <p class="project__product-descriptio">YanilA Drive is a comfortable modern residential quarter in the Vsevolozhsky district of the Leningrad region.</p>
+              <p class="project__product-description">YanilA Drive is a comfortable modern residential quarter in the Vsevolozhsky district of the Leningrad region.</p>
             <div class="project__images">
               <picture>
                 <source type="image/webp" media="(min-width: 640px)" srcset="./images/project-tablet-1.webp 1x, ./images/project-tablet-1@2x.webp 2x">
@@ -303,42 +303,41 @@
       <div class="reviews__wrapper wrapper slider">
         <h2 class="reviews__title title">06/ reviews</h2>
         <div class="reviews__info">
-          <span class="text text--mark"></span>
-          <p class="reviews__subtitle subtitle">
+          <p class="reviews__subtitle subtitle subtitle--mark">
             OUR company has gained a good reputation among its customers
           </p>
         </div>
         <div class="reviews__button-wrapper">
           <button class="reviews__button reviews__button--prev" type="button">
             <svg class="reviews__icon" width="13" height="9">
-              <use class="reviews__icon-next" xlink:href="images/sprite.svg#prev">
+              <use class="reviews__icon-next" xlink:href="images/sprite.svg#prev"></use>
             </svg>
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
           <button class="reviews__button reviews__button--next" type="button">
             <svg class="reviews__icon" width="13" height="9">
-              <use class="reviews__icon-next" xlink:href="images/sprite.svg#next">
+              <use class="reviews__icon-next" xlink:href="images/sprite.svg#next"></use>
             </svg>
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          </div>
+        </div>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item reviews__item--active">
             <p class="reviews__text">In the Rzhevka project, as a result of the integrated approach applied by the «GeneralPlan»company to the engineering preparation of the territory, it was possible to reduce the cost of the customer's funds for the removal of soil by 70%.</p>
             <cite class="reviews__author-name">LSR Group</cite>
           </blockquote>
-          <!-- <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои<br>фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author-name">LSR Group</cite>
-          </blockquote> -->
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">We express our gratitude to «GeneralPlan» for fruitful work in the field of designing sections «GeneralPlan» and «Drainage». During our cooperation with Planeta General Plan LLC, many projects have been implemented.</p>
+            <cite class="reviews__author-name">Architectural<br />studio «Studio 44»</cite>
+          </blockquote>
+        </div>
       </div>
     </section>
     <section class="values" id="values">
       <div class="values__wrapper wrapper">
         <h2 class="values__title title">07/ OUR VALUES</h2>
         <div class="values__info">
-          <span class="text text--mark"></span>
-          <p class="values__subtitle subtitle">
+          <p class="values__subtitle subtitle subtitle--mark">
             The activity of our company is based on the following values: GUARANTEE, compliance with deadlines, high quality, ensuring comfortable INTERACTION WITH THE CUSTOMER
           </p>
         </div>
@@ -347,12 +346,13 @@
     <section class="customers" id="customers">
       <div class="customers__wrapper wrapper">
         <h2 class="customers__title title">08/ customers</h2>
+        <div class="customers__list-inner">
+        <h3 class="customers__heading">architectural studio</h3>
         <ul class="customers__list product-list">
-          <h3 class="customers__heading">architectural studio</h3>
           <li class="customers__item">
             <a class="customers__link" href="#" aria-label="Studio-44">
               <svg width="50" height="55">
-                <use class="customers__icon" xlink:href="images/sprite.svg#studio-44">
+                <use class="customers__icon" xlink:href="images/sprite.svg#studio-44"></use>
               </svg>
             </a>
           </li>
@@ -360,57 +360,59 @@
             <a class="customers__link customers__link--buro" href="#" aria-label="Buro"></a>
           </li>
         </ul>
+        </div>
+        <div class="customers__list-inner">
+        <h3 class="customers__heading">Developers</h3>
         <ul class="customers__list product-list customers__list--developers">
-          <h3 class="customers__heading">Developers</h3>
           <li class="customers__item">
             <a class="customers__link customers__link--lsp" href="#" aria-label="Studio-44">
               <svg width="73" height="23">
-                <use class="customers__icon" xlink:href="images/sprite.svg#lsp">
+                <use class="customers__icon" xlink:href="images/sprite.svg#lsp"></use>
               </svg>
             </a>
           </li>
           <li class="customers__item">
             <a class="customers__link customers__link--bonava" href="#" aria-label="bonava">
               <svg width="52" height="30">
-                <use class="customers__icon" xlink:href="images/sprite.svg#bonava">
+                <use class="customers__icon" xlink:href="images/sprite.svg#bonava"></use>
               </svg>
             </a>
           </li>
           <li class="customers__item">
             <a class="customers__link customers__link--cds" href="#" aria-label="cds">
               <svg width="120" height="25">
-                <use class="customers__icon-cdc" xlink:href="images/sprite.svg#cds">
+                <use class="customers__icon-cdc" xlink:href="images/sprite.svg#cds"></use>
               </svg>
             </a>
           </li>
         </ul>
+        </div>
       </div>
     </section>
     <section class="subscribe" id="subscribe">
       <div class="subscribe__wrapper wrapper">
         <h2 class="visually-hidden">Subcribe</h2>
         <div class="subscribe__info">
-          <span class="text text--mark"></span>
-          <p class="subscribe__subtitle subtitle">
+          <p class="subscribe__subtitle subtitle subtitle--mark">
             Leave a request for the development of the project and we will contact you
           </p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__field">
               <label class="form__label" for="name">
-                <p class="form__heading">First name, Last Name *</p>
+                <span class="form__heading">First name, Last Name *</span>
                 <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
               </label>
             </div>
             <div class="form__field">
               <label class="form__label" for="telephone">
-                <p class="form__heading">Telephone</p>
+                <span class="form__heading">Telephone</span>
                 <input class="form__input" type="tel" name="telephone" id="telephone" placeholder="Telephone">
               </label>
             </div>
             <div class="form__field">
               <label class="form__label" for="email">
-                <p class="form__heading">Email</p>
+                <span class="form__heading">Email</span>
                 <input class="form__input" type="email" name="email" id="email" placeholder="Email">
               </label>
             </div>

@@ -13,17 +13,20 @@
 
 // List
 
+.customers__list-inner {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .customers__list {
   @include overlay;
   position: relative;
   display: grid;
   align-items: center;
   padding-bottom: 10px;
-  margin-bottom: 20px;
-
-  &--developers {
-    margin-bottom: 0;
-  }
 }
 
 // Heading

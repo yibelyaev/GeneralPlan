@@ -1,0 +1,48 @@
+// Line
+
+.line__top {
+  &::before {
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 0 1px #9b9b9b;
+    width: calc(100% - 40px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.line__right {
+  &::before {
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 0 1px #9b9b9b;
+    width: calc(100% - 20px);
+    top: 50%;
+    left: 50%;
+    transform: rotate(-270deg);
+  }
+}
+
+.line__bottom {
+  &::after {
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 0 1px #9b9b9b;
+    width: calc(100% - 40px);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+
+.line__left {
+  &::after {
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 0 1px #9b9b9b;
+    width: calc(100% - 20px);
+    top: 50%;
+    right: 50%;
+    transform: rotate(-270deg) scaleX(0.9) center;
+  }
+}

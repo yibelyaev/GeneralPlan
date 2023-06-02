@@ -1,6 +1,7 @@
 // Hero
 
 .hero {
+  position: relative;
   padding-bottom: 60px;
 }
 
@@ -64,9 +65,8 @@
 .hero__button {
   @include tablet {
     max-width: 200px;
-    justify-self: end;
     position: absolute;
-    top: 50%;
-    transform: translateY(-60%);
+    top: 20%;
+    justify-self: end;
   }
 }
