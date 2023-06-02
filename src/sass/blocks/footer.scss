@@ -56,7 +56,7 @@
   &--phone::before {
     content: "";
     position: absolute;
-    background-image: url("../../images/phone.svg");
+    background-image: url("../images/phone.svg");
     background-repeat: no-repeat;
     width: 16px;
     height: 15px;
@@ -66,7 +66,7 @@
   &--mail::before {
     content: "";
     position: absolute;
-    background-image: url("../../images/mail.svg");
+    background-image: url("../images/mail.svg");
     background-repeat: no-repeat;
     width: 15px;
     height: 11px;
