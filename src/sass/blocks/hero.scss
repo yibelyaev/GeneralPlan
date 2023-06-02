@@ -7,29 +7,29 @@
 
 .hero__wrapper {
   &--index {
-    background-image: url("../../images/generalplan.jpg");
+    background-image: url("../images/generalplan.jpg");
     background-repeat: no-repeat;
     background-position: center 309px;
     padding-bottom: 400px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/generalplan@2x.jpg");
+      background-image: url("../images/generalplan@2x.jpg");
       background-size: 90% 386px;
     }
 
     @include tablet {
-      background-image: url("../../images/generalplan-tablet.jpg");
+      background-image: url("../images/generalplan-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../images/generalplan-tablet@2x.jpg");
+        background-image: url("../images/generalplan-tablet@2x.jpg");
       }
     }
 
     @include desktop {
-      background-image: url("../../images/generalplan-desktop.jpg");
+      background-image: url("../images/generalplan-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../images/generalplan-desktop@2x.jpg");
+        background-image: url("../images/generalplan-desktop@2x.jpg");
         background-size: 1400px auto;
       }
     }
