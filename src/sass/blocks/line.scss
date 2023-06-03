@@ -1,7 +1,6 @@
 // Line
 
 .line {
-
   &::before,
   &::after {
     content: "";
@@ -21,7 +20,6 @@
   &::after {
     border: 0;
     border-bottom: 2px solid #9b9b9b;
-
     transform: scaleX(0.9);
   }
 
@@ -66,7 +64,6 @@
 
     &::before {
       border-left: 2px solid #9b9b9b;
-
     }
 
     &:last-of-type {
@@ -79,11 +76,11 @@
 }
 
 .direction .line {
-  @include horizontal()
+  @include horizontal();
 }
 
 .advantages .line {
-  @include horizontal()
+  @include horizontal();
 }
 
 .cases .line {
@@ -95,9 +92,9 @@
 }
 
 .reviews .line {
-  @include horizontal()
+  @include horizontal();
 }
 
 .customers .line {
-  @include vertical()
+  @include vertical();
 }

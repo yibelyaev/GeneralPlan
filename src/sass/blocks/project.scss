@@ -50,9 +50,25 @@
   border: 1px solid $basic-orange;
   border-radius: 102px;
   cursor: pointer;
+  background-color: transparent;
 
   &--current {
     background-color: $basic-orange;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #9b9b9b;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(152, 115, 211);
+    outline-offset: 3px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

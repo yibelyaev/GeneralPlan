@@ -6,6 +6,19 @@
   @include tablet {
     padding-bottom: 90px;
   }
+
+  @include desktop {
+    padding-bottom: 120px;
+  }
+}
+
+// Content
+
+.direction__content {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 // Title
@@ -32,6 +45,14 @@
 
 .direction__item {
   position: relative;
+}
+
+.direction__item:nth-child(2n) .line {
+  @include tablet {
+    &::before {
+      border-left: 0;
+    }
+  }
 }
 
 // Info
@@ -68,14 +89,12 @@
   opacity: 0.6;
 }
 
-// // Button
-
-// .direction__item-button {
-
-// }
-
 // Button
 
 .direction__button {
   width: 100%;
+
+  @include desktop {
+    grid-column: 2/-1;
+  }
 }

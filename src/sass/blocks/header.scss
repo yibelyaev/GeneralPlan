@@ -4,6 +4,12 @@
   position: relative;
   display: grid;
   padding: 25px 10px;
+
+  @include desktop {
+    grid-template-columns: min-content 1fr;
+    max-width: 1100px;
+    padding-left: 16px;
+  }
 }
 
 
@@ -14,4 +20,8 @@
   top: 0;
   right: 0;
   left: 0;
+
+  @include desktop {
+    position: relative;
+  }
 }

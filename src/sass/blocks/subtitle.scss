@@ -17,6 +17,12 @@
     text-indent: 90px;
   }
 
+  @include desktop {
+    font-size: 45px;
+    letter-spacing: 0.03em;
+    text-indent: 60px;
+  }
+
   &--mark {
     &::before {
       content: "";

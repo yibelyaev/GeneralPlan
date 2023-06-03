@@ -9,4 +9,20 @@
   text-decoration: none;
   border-bottom: 1px solid $basic-white;
   cursor: pointer;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: #9b9b9b;
+      border-color: #9b9b9b;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(152, 115, 211);
+    outline-offset: 3px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

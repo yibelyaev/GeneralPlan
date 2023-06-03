@@ -6,12 +6,21 @@
   @include tablet {
     padding-bottom: 90px;
   }
+
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 
 // Info
 
 .about__info {
   position: relative;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 // Title

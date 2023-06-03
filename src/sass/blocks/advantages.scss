@@ -5,10 +5,24 @@
   @include tablet {
     padding-bottom: 90px;
   }
+
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 
 .advantages__info {
   position: relative;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .advantages__title {
@@ -17,6 +31,11 @@
 
 .advantages__subtitle {
   margin-bottom: 26px;
+
+
+  @include desktop {
+    grid-column: 2/-1;
+  }
 }
 
 
@@ -33,6 +52,10 @@
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-column: 2/-1;
   }
 }
 

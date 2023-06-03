@@ -22,51 +22,52 @@
         <img src="./images/logo.svg" alt="Логотип Генплан.">
       </a>
     </div>
-    <nav class="header__menu menu">
-      <button class="menu__button">
+    <nav class="header__menu menu" id="menu">
+      <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu" aria-label="toggle menu">
         <svg class="menu__icon" width="28" height="28">
           <use class="menu__icon-menu" xlink:href="images/sprite.svg#menu"></use>
+          <use class="menu__icon-cross" xlink:href="images/sprite.svg#cross"></use>
         </svg>
       </button>
       <ul class="menu__list">
         <li class="menu__item">
           <a class="menu__link" href="#">
-            О компании
+            about
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">
-            Направления работы
+            area of work
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">
-            Преимущества
+            benefit
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">
-            Кейсы
+            cases
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">
-            Проекты
+            projects
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">
-            Отзывы
+            reviews
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">
-            Клиенты
+            customers
           </a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">
-            Контакты
+            contacts
           </a>
         </li>
       </ul>
@@ -81,11 +82,10 @@
         </a>
       </div>
     </section>
-
     <section class="about" id="about">
       <div class="about__wrapper wrapper">
-        <h2 class="about__title title">01/ about</h2>
         <div class="about__info">
+          <h2 class="about__title title">01/ about</h2>
           <p class="about__subtitle subtitle subtitle--mark">
             The «GeneralPlan» company is a specialized company established in 2012. The uniqueness of our company lies in the experience of our engineers specializing in the development of project documentation
           </p>
@@ -94,107 +94,109 @@
     </section>
     <section class="direction" id="direction">
       <div class="direction__wrapper wrapper">
-        <h2 class="direction__title title">02/ area of work</h2>
-        <ul class="direction__list">
-          <li class="direction__item line">
-            <div class="direction__info">
-              <h3 class="direction__item-title">Landscape design</h3>
-              <p class="direction__item-description">One of the activities of our company is the development of urban landscape architecture projects.</p>
-              <a class="direction__item-button item-button" href="#">
-                Learn more
-              </a>
-            </div>
-          </li>
-          <li class="direction__item line">
-            <div class="direction__info">
-              <h3 class="direction__item-title">Design of external engineering networks</h3>
-              <p class="direction__item-description">The design of external engineering networks is a key stage in the construction of residential and non residential facilities.</p>
-              <a class="direction__item-button item-button" href="#">
-                Learn more
-              </a>
-            </div>
-          </li>
-          <li class="direction__item line">
-            <div class="direction__info">
-              <h3 class="direction__item-title">general plan</h3>
-              <p class="direction__item-description">The general plan is an integral part of each project, on the basis of which planning, construction, reconstruction and other types of urban development of territories are carried out.</p>
-              <a class="direction__item-button item-button" href="#">
-                Learn more
-              </a>
-            </div>
-          </li>
-        </ul>
-        <a class="direction__button button" href="#">
-          Discuss the project
-        </a>
+        <div class="direction__content">
+          <h2 class="direction__title title">02/ area of work</h2>
+          <ul class="direction__list">
+            <li class="direction__item line">
+              <div class="direction__info">
+                <h3 class="direction__item-title">Landscape design</h3>
+                <p class="direction__item-description">One of the activities of our company is the development of urban landscape architecture projects.</p>
+                <a class="direction__item-button item-button" href="#">
+                  Learn more
+                </a>
+              </div>
+            </li>
+            <li class="direction__item">
+              <span class="line"></span>
+              <div class="direction__info">
+                <h3 class="direction__item-title">Design of external engineering networks</h3>
+                <p class="direction__item-description">The design of external engineering networks is a key stage in the construction of residential and non residential facilities.</p>
+                <a class="direction__item-button item-button" href="#">
+                  Learn more
+                </a>
+              </div>
+            </li>
+            <li class="direction__item line">
+              <div class="direction__info">
+                <h3 class="direction__item-title">general plan</h3>
+                <p class="direction__item-description">The general plan is an integral part of each project, on the basis of which planning, construction, reconstruction and other types of urban development of territories are carried out.</p>
+                <a class="direction__item-button item-button" href="#">
+                  Learn more
+                </a>
+              </div>
+            </li>
+          </ul>
+          <a class="direction__button button" href="#">
+            Discuss the project
+          </a>
+        </div>
       </div>
     </section>
     <section class="advantages" id="advantages">
       <div class="advantages__wrapper wrapper">
-        <h2 class="advantages__title title">03/ benefit</h2>
         <div class="advantages__info">
+          <h2 class="advantages__title title">03/ benefit</h2>
           <p class="advantages__subtitle subtitle subtitle--mark">
             We develop projects of various scales and purposes: from a transformer substation to a residential area
           </p>
+          <ul class="advantages__list">
+            <li class="advantages__item line">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">transformer substation</h3>
+                <p class="advantages__item-description"><span>1/100</span>ha</p>
+              </div>
+            </li>
+            <li class="advantages__item line advantages__item--plot">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">plot from</h3>
+                <p class="advantages__item-description"><span>2,5</span>ha</p>
+              </div>
+            </li>
+            <li class="advantages__item line advantages__item--quatre">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">quarter to</h3>
+                <p class="advantages__item-description"><span>20</span>ha</p>
+              </div>
+            </li>
+            <li class="advantages__item line">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">area ≈</h3>
+                <p class="advantages__item-description"><span>160</span>ha</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="advantages__list">
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">transformer substation</h3>
-              <p class="advantages__item-description"><span>1/100</span>ha</p>
-            </div>
-          </li>
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">plot from</h3>
-              <p class="advantages__item-description"><span>2,5</span>ha</p>
-            </div>
-          </li>
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">quarter to</h3>
-              <p class="advantages__item-description"><span>20</span>ha</p>
-            </div>
-          </li>
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">area ≈</h3>
-              <p class="advantages__item-description"><span>160</span>ha</p>
-            </div>
-          </li>
-        </ul>
         <div class="advantages__info">
-          <span class="text text--mark"></span>
-          <p class="advantages__subtitle subtitle">
+          <p class="advantages__subtitle subtitle subtitle--mark">
             we have assembled a team of real professionals who know and love their work
           </p>
+          <ul class="advantages__list advantages__list-develop">
+            <li class="advantages__item line">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">landscape architects</h3>
+                <p class="advantages__item-description"><span>2</span></p>
+              </div>
+            </li>
+            <li class="advantages__item line">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">general planners</h3>
+                <p class="advantages__item-description"><span>5</span></p>
+              </div>
+            </li>
+            <li class="advantages__item line">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">specialized engineers</h3>
+                <p class="advantages__item-description"><span>20</span></p>
+              </div>
+            </li>
+            <li class="advantages__item line">
+              <div class="advantages__item-info">
+                <h3 class="advantages__item-title">HYPa</h3>
+                <p class="advantages__item-description"><span>4</span></p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="advantages__list">
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">landscape architects</h3>
-              <p class="advantages__item-description"><span>2</span></p>
-            </div>
-          </li>
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">general planners</h3>
-              <p class="advantages__item-description"><span>5</span></p>
-            </div>
-          </li>
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">specialized engineers</h3>
-              <p class="advantages__item-description"><span>20</span></p>
-            </div>
-          </li>
-          <li class="advantages__item line">
-            <div class="advantages__item-info">
-              <h3 class="advantages__item-title">HYPa</h3>
-              <p class="advantages__item-description"><span>4</span></p>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
     <section class="cases" id="cases">
@@ -351,9 +353,20 @@
               </svg>
             </a>
           </li>
-          <li class="customers__item line">
+          <li class="customers__item line customers__item--buro">
             <a class="customers__link customers__link--buro" href="https://ostarch.ru/main/projects" target="_blank" rel="noopener noreferrer" aria-label="Buro"></a>
           </li>
+          <li class="customers__item line">
+            <a class="customers__link" href="https://studio44.ru/" target="_blank" rel="noopener noreferrer" aria-label="Studio-44" >
+            </a>
+          </li>
+            <li class="customers__item line">
+              <a class="customers__link customers__link--spektrum" href="https://spectrum-group.ru/" target="_blank" rel="noopener noreferrer" aria-label="Spektrum" >
+                <svg width="181" height="33">
+                  <use class="customers__icon" xlink:href="images/sprite.svg#spektrum"></use>
+                </svg>
+              </a>
+            </li>
         </ul>
         </div>
         <div class="customers__list-inner">
@@ -366,20 +379,43 @@
               </svg>
             </a>
           </li>
-          <li class="customers__item line">
+          <li class="customers__item line customers__item--bonava">
             <a class="customers__link customers__link--bonava" href="https://www.bonava.ru/" target="_blank" rel="noopener noreferrer" aria-label="bonava">
               <svg width="52" height="30">
                 <use class="customers__icon" xlink:href="images/sprite.svg#bonava"></use>
               </svg>
             </a>
           </li>
-          <li class="customers__item line">
+          <li class="customers__item line customers__item--cds">
             <a class="customers__link customers__link--cds" href="https://www.cds.spb.ru/company/" target="_blank" rel="noopener noreferrer" aria-label="cds">
               <svg width="120" height="25">
                 <use class="customers__icon-cdc" xlink:href="images/sprite.svg#cds"></use>
               </svg>
             </a>
           </li>
+          <li class="customers__item line customers__item--home">
+            <a class="customers__link customers__link--home" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
+              <svg width="73" height="23">
+                <use class="customers__icon" xlink:href="images/sprite.svg#home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__item line customers__item--adamant">
+            <a class="customers__link customers__link--adamant" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
+              <svg width="73" height="23">
+                <use class="customers__icon" xlink:href="images/sprite.svg#adamant"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__item line customers__item--kvs">
+            <a class="customers__link customers__link--kvs" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
+              <svg width="73" height="23">
+                <use class="customers__icon" xlink:href="images/sprite.svg#kvs"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__item line customers__item--hidden"></li>
+          <li class="customers__item line customers__item--hidden"></li>
         </ul>
         </div>
       </div>
@@ -393,25 +429,25 @@
           </p>
         </div>
         <form class="form line" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__field">
+            <div class="form__field form__field--name">
               <label class="form__label" for="name">
                 <span class="form__heading">First name, Last Name *</span>
                 <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
               </label>
             </div>
-            <div class="form__field">
+            <div class="form__field form__field--phone">
               <label class="form__label" for="telephone">
-                <span class="form__heading">Telephone</span>
+                <span class="visually-hidden form__heading">Telephone</span>
                 <input class="form__input" type="tel" name="telephone" id="telephone" placeholder="Telephone">
               </label>
             </div>
-            <div class="form__field">
+            <div class="form__field form__field--mail">
               <label class="form__label" for="email">
-                <span class="form__heading">Email</span>
+                <span class="visually-hidden form__heading">Email</span>
                 <input class="form__input" type="email" name="email" id="email" placeholder="Email">
               </label>
             </div>
-            <div class="form__field">
+            <div class="form__field form__field--textarea">
               <label class="visually-hidden" for="wish">Wish</label>
               <textarea class="form__input form__textarea" name="wish" id="wish" cols="30" rows="10" placeholder="I want to order a project"></textarea>
             </div>
@@ -429,12 +465,13 @@
   </main>
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__logo logo">
+      <div class="footer__inner">
+        <div class="footer__logo logo">
         <a class="logo__link" href="">
           <img src="./images/logo.svg" alt="Логотип Генплан.">
         </a>
-      </div>
-      <div class="footer__address">
+        </div>
+        <div class="footer__address">
         <p class="footer__address footer__address--city">St. Petersburg, Pulkovskoe highway, 30, room 4</p>
         <p>
           <a class="footer__link footer__link--phone" href="tel:88003021976" rel="noopener noreferrer">
@@ -446,8 +483,8 @@
               contact@genplan.ooo
             </a>
             </p>
-      </div>
-      <div class="footer__social social">
+        </div>
+        <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#">telegram</a>
@@ -456,9 +493,11 @@
             <a class="social__link" href="#">behance</a>
           </li>
         </ul>
+        </div>
+        <p class="footer__copy">© 2007–2023 GeneralPlan</p>
       </div>
-      <p class="footer__copy">© 2007–2023 GeneralPlan</p>
     </div>
   </footer>
+  <script src="./js/scripts.js"></script>
 </body>
 </html>

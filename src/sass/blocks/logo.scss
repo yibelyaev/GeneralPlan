@@ -1,6 +1,10 @@
 // Logo
 
-// .logo__link {
-//   display: grid;
-//   grid-template-columns: min-content 1fr;
-// }
+.logo {
+  display: grid;
+}
+
+.logo__link {
+  width: 131px;
+  min-height: 34px;
+}

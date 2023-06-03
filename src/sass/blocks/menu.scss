@@ -2,6 +2,10 @@
 
 .menu {
   display: grid;
+
+  @include desktop {
+    min-height: 34px;
+  }
 }
 
 
@@ -15,14 +19,68 @@
   justify-self: end;
   margin-top: 28px;
   margin-right: 10px;
+  cursor: pointer;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 // List
 
 .menu__list {
+  @include overlay;
   display: none;
+  font-family: "Inter", sans-serif;
 
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    width: 850px;
   }
+}
+
+.menu--open .menu__list {
+  display: grid;
+  z-index: 3;
+  height: 100vh;
+}
+
+// Item
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: $basic-black;
+}
+
+// Link
+
+.menu__link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  padding: 10px;
+  width: 100%;
+
+  @include desktop {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+.menu__button[aria-expanded="false"] .menu__icon-cross {
+  display: none;
+}
+
+.menu__button[aria-expanded="true"] .menu__icon-menu {
+  display: none;
 }

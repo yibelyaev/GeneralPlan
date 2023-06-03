@@ -1,8 +1,7 @@
 // Button
 
 .button {
-  /* stylelint-disable-next-line */
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -16,4 +15,19 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #9b9b9b;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(152, 115, 211);
+    outline-offset: 3px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -130,7 +130,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('src/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('src/js/script.js', gulp.series(scripts));
+  gulp.watch('src/js/scripts.js', gulp.series(scripts, reload));
   gulp.watch('src/*.html', gulp.series(html, reload))
   gulp.watch('src/images/icons/*.svg').on('change', svg, browser.reload);
 }

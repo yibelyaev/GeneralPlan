@@ -2,19 +2,39 @@
 
 .form {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding: 20px 15px;
   font-family: "Inter", sans-serif;
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
 }
 
 // Field
 
 .form__field {
+  display: grid;
   margin-bottom: 8px;
 
   &:last-of-type {
     margin-bottom: 13px;
+  }
+
+  @include desktop {
+    &--phone {
+      grid-column: 1/2;
+    }
+
+    &--mail {
+      grid-row: 3/3;
+    }
+
+    &--textarea {
+      grid-column: 2/-1;
+      grid-row: 3 span;
+    }
   }
 }
 
@@ -34,6 +54,7 @@
 .form__label {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 // Input
@@ -60,7 +81,7 @@
 .form__textarea {
   width: 100%;
   resize: none;
-  height: 88px;
+  min-height: 88px;
 }
 
 // Checbox

@@ -14,6 +14,7 @@
 // List
 
 .customers__list-inner {
+  display: grid;
   margin-bottom: 20px;
 
   &:last-of-type {
@@ -27,6 +28,20 @@
   display: grid;
   align-items: center;
   padding-bottom: 10px;
+
+  @include tablet {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    &--developers {
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
 }
 
 // Heading
@@ -50,6 +65,70 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+
+  &--home,
+  &--adamant,
+  &--kvs {
+    display: none;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @include tablet {
+    height: 100%;
+
+    &--home,
+    &--adamant,
+    &--kvs {
+      display: flex;
+    }
+
+    &--buro {
+      grid-column: 1/2;
+      grid-row: 2/2;
+    }
+
+    &--bonava {
+      grid-column: 1/2;
+    }
+
+    &--cds {
+      grid-column: 1/1;
+      grid-row: 3/3;
+    }
+
+    &--kvs {
+      grid-column: 2/2;
+      grid-row: 2/1;
+    }
+  }
+
+  @include desktop {
+    &--buro {
+      grid-column: 4/4;
+      grid-row: 1/-4;
+    }
+
+    &--home {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+
+    &--cds {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    &--kvs {
+      grid-column: 4/-1;
+    }
+
+    &--hidden {
+      display: flex;
+    }
+  }
 }
 
 // Link
@@ -63,6 +142,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.3s ease-in;
 
   &--buro {
     background-image: url("../images/buro.png");
@@ -93,5 +173,21 @@
   &--bonava {
     padding-top: 37px;
     padding-bottom: 59px;
+  }
+
+  @include tablet {
+    height: 100%;
+  }
+
+  @include desktop {
+    &--spektrum {
+      padding: 48px 41px 44px 54px;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
