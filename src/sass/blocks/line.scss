@@ -1,6 +1,7 @@
 // Line
 
 .line {
+
   &::before,
   &::after {
     content: "";
@@ -19,12 +20,96 @@
 
   &::after {
     border: 0;
-    border-top: 2px solid #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
 
     transform: scaleX(0.9);
   }
 
-  &:last-child::after {
-    border-bottom: 2px solid #9b9b9b;
+  image.png &:first-child::after {
+    border-top: 2px solid #9b9b9b;
   }
+
+  &:only-of-type::after {
+    border-top: 2px solid #9b9b9b;
+  }
+
+  &:nth-of-type(2n)::before {
+    @include tablet() {
+      border-left: 0;
+    }
+  }
+}
+
+.direction .line {
+
+  @include tablet() {
+    &:nth-of-type(1) {
+      &::after {
+        border-top: 2px solid #9b9b9b;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::after {
+        border-top: 2px solid #9b9b9b;
+      }
+    }
+  }
+}
+
+@mixin horizontal {
+  @include tablet() {
+    &:nth-of-type(1) {
+      &::after {
+        border-top: 2px solid #9b9b9b;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::after {
+        border-top: 2px solid #9b9b9b;
+      }
+    }
+  }
+}
+
+@mixin vertical {
+  @include tablet() {
+    &::after {
+      border: 0;
+      border-top: 2px solid #9b9b9b;
+    }
+
+    &::before {
+      border-left: 2px solid #9b9b9b;
+
+    }
+
+    &:last-of-type {
+      &::after {
+        border-top: 2px solid #9b9b9b;
+        border-bottom: 2px solid #9b9b9b;
+      }
+    }
+  }
+}
+
+.advantages .line {
+  @include horizontal()
+}
+
+.cases .line {
+  @include horizontal();
+}
+
+.project .line {
+  @include vertical();
+}
+
+.reviews .line {
+  @include horizontal()
+}
+
+.customers .line {
+  @include vertical()
 }
