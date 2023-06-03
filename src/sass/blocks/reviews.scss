@@ -2,6 +2,14 @@
 
 .reviews {
   padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 90px;
+  }
+
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 
 // Title
@@ -13,15 +21,23 @@
 
 // Subtitle
 
-// .reviews__subtitle {
-//   text-indent: 90px;
-// }
+.reviews__subtitle {
+  margin-bottom: 10px;
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
 
 // Info
 
 .reviews__info {
   position: relative;
-  margin-bottom: 10px;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 }
 
 // List
@@ -33,6 +49,11 @@
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 2/-1;
+  }
 }
 
 // Item
@@ -43,6 +64,18 @@
   display: flex;
   flex-direction: column;
   padding: 20px 56px 36px 34px;
+
+  &--b2,
+  &--cdr {
+    display: none;
+  }
+
+  @include desktop {
+    &--b2,
+    &--cdr {
+      display: flex;
+    }
+  }
 }
 
 // Text
@@ -79,6 +112,10 @@
   margin-left: auto;
   max-width: 115px;
   width: 100%;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .reviews__button {

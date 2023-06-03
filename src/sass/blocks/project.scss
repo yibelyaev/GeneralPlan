@@ -2,6 +2,14 @@
 
 .project {
   padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 90px;
+  }
+
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 
 // Title

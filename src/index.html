@@ -264,8 +264,10 @@
                 <p class="project__product-description">YanilA Drive is a comfortable modern residential quarter in the Vsevolozhsky district of the Leningrad region.</p>
               <div class="project__images">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./images/project-desktop-1.webp 1x, ./images/project-desktop-1@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 640px)" srcset="./images/project-tablet-1.webp 1x, ./images/project-tablet-1@2x.webp 2x">
                   <source type="image/webp" srcset="./images/project-1.webp 1x, ./images/project-1@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="./images/project-desktop-1.jpg 1x, ./images/project-desktop-1@2x.jpg 2x">
                   <source media="(min-width: 640px)" srcset="./images/project-tablet-1.jpg 1x, ./images/project-tablet-1@2x.jpg 2x">
                   <img src="./images/project-1.jpg" srcset="./images/project-1@2x.jpg 2x" decoding="async" alt="">
                 </picture>
@@ -279,8 +281,10 @@
                 <p class="project__product-description project__product-description--idealist">The Idealist Club House is located in the historical center of St. Petersburg, between the embankment of the Obvodny Canal and Moskovsky Prospekt.</p>
                 <div class="project__images">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./images/project-desktop-2.webp 1x, ./images/project-desktop-2@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 640px)" srcset="./images/project-tablet-2.webp 1x, ./images/project-tablet-2@2x.webp 2x">
                   <source type="image/webp" srcset="./images/project-2.webp 1x, ./images/project-2@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="./images/project-desktop-2.jpg 1x, ./images/project-desktop-2@2x.jpg 2x">
                   <source media="(min-width: 640px)" srcset="./images/project-tablet-2.jpg 1x, ./images/project-tablet-2@2x.jpg 2x">
                   <img src="./images/project-2.jpg" srcset="./images/project-2@2x.jpg 2x" decoding="async" alt="">
                 </picture>
@@ -299,42 +303,50 @@
     </section>
     <section class="reviews" id="reviews">
       <div class="reviews__wrapper wrapper slider">
-        <h2 class="reviews__title title">06/ reviews</h2>
         <div class="reviews__info">
+          <h2 class="reviews__title title">06/ reviews</h2>
           <p class="reviews__subtitle subtitle subtitle--mark">
             OUR company has gained a good reputation among its customers
           </p>
-        </div>
-        <div class="reviews__button-wrapper">
-          <button class="reviews__button reviews__button--prev" type="button">
-            <svg class="reviews__icon" width="13" height="9">
-              <use class="reviews__icon-next" xlink:href="images/sprite.svg#prev"></use>
-            </svg>
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <button class="reviews__button reviews__button--next" type="button">
-            <svg class="reviews__icon" width="13" height="9">
-              <use class="reviews__icon-next" xlink:href="images/sprite.svg#next"></use>
-            </svg>
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
-        </div>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item reviews__item--active line">
-            <p class="reviews__text">In the Rzhevka project, as a result of the integrated approach applied by the «GeneralPlan»company to the engineering preparation of the territory, it was possible to reduce the cost of the customer's funds for the removal of soil by 70%.</p>
-            <cite class="reviews__author-name">LSR Group</cite>
-          </blockquote>
-          <blockquote class="reviews__item slider__item line">
-            <p class="reviews__text">We express our gratitude to «GeneralPlan» for fruitful work in the field of designing sections «GeneralPlan» and «Drainage». During our cooperation with Planeta General Plan LLC, many projects have been implemented.</p>
-            <cite class="reviews__author-name">Architectural<br />studio «Studio 44»</cite>
-          </blockquote>
+          <div class="reviews__button-wrapper">
+            <button class="reviews__button reviews__button--prev" type="button">
+              <svg class="reviews__icon" width="13" height="9">
+                <use class="reviews__icon-next" xlink:href="images/sprite.svg#prev"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="reviews__button reviews__button--next" type="button">
+              <svg class="reviews__icon" width="13" height="9">
+                <use class="reviews__icon-next" xlink:href="images/sprite.svg#next"></use>
+              </svg>
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item reviews__item--active line">
+              <p class="reviews__text">In the Rzhevka project, as a result of the integrated approach applied by the «GeneralPlan»company to the engineering preparation of the territory, it was possible to reduce the cost of the customer's funds for the removal of soil by 70%.</p>
+              <cite class="reviews__author-name">LSR Group</cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item line">
+              <p class="reviews__text">We express our gratitude to «GeneralPlan» for fruitful work in the field of designing sections «GeneralPlan» and «Drainage». During our cooperation with Planeta General Plan LLC, many projects have been implemented.</p>
+              <cite class="reviews__author-name">Architectural<br />studio «Studio 44»</cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item line reviews__item--b2">
+              <p class="reviews__text">«GeneralPlan» has been our reliable and long-term partner for more than 10 years. During the cooperation, the General Plan company has been involved in many important projects for our bureau.</p>
+              <cite class="reviews__author-name">Architectural<br />studio «B2»</cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item line reviews__item--cdr">
+              <p class="reviews__text">«GeneralPlan» has been our partner since 2017, providing a full range of design services. Thanks to the professionalism of the company's employees, all projects were developed efficiently and in the shortest possible time.</p>
+              <cite class="reviews__author-name">CDR</cite>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
     <section class="values" id="values">
       <div class="values__wrapper wrapper">
-        <h2 class="values__title title">07/ OUR VALUES</h2>
         <div class="values__info">
+          <h2 class="values__title title">07/ OUR VALUES</h2>
           <p class="values__subtitle subtitle subtitle--mark">
             The activity of our company is based on the following values: GUARANTEE, compliance with deadlines, high quality, ensuring comfortable INTERACTION WITH THE CUSTOMER
           </p>
