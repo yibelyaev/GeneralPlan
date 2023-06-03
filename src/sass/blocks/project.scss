@@ -15,6 +15,12 @@
 .project__info {
   position: relative;
   margin-bottom: 30px;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: min-content 1fr;
+  }
 }
 
 // List
@@ -29,6 +35,10 @@
 
   @include tablet {
     grid-template-columns: repeat(3, max-content);
+  }
+
+  @include desktop {
+    grid-column: 2/-1;
   }
 }
 
@@ -80,6 +90,10 @@
   display: grid;
   row-gap: 30px;
   margin-bottom: 30px;
+
+  @include desktop {
+    grid-column: 2/-1;
+  }
 }
 
 // Item
@@ -93,6 +107,10 @@
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content 1fr min-content;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 3fr;
   }
 }
 
@@ -155,4 +173,8 @@
 
 .project__button {
   width: 100%;
+
+  @include desktop {
+    grid-column: 2/-1;
+  }
 }
