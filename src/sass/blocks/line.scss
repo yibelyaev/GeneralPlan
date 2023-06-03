@@ -40,22 +40,6 @@
   }
 }
 
-.direction .line {
-
-  @include tablet() {
-    &:nth-of-type(1) {
-      &::after {
-        border-top: 2px solid #9b9b9b;
-      }
-    }
-
-    &:nth-of-type(2) {
-      &::after {
-        border-top: 2px solid #9b9b9b;
-      }
-    }
-  }
-}
 
 @mixin horizontal {
   @include tablet() {
@@ -92,6 +76,10 @@
       }
     }
   }
+}
+
+.direction .line {
+  @include horizontal()
 }
 
 .advantages .line {
