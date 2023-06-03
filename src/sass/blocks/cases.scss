@@ -71,6 +71,11 @@
   align-items: center;
   position: relative;
   padding: 20px 15px 14px;
+  flex-grow: 1;
+
+  @include desktop {
+    padding: 20px;
+  }
 }
 
 // Title
@@ -86,6 +91,10 @@
   margin: 0;
   margin-bottom: 10px;
   color: inherit;
+
+  @include desktop {
+    text-align: left;
+  }
 }
 
 // Description

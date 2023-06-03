@@ -72,6 +72,12 @@
         border-bottom: 2px solid #9b9b9b;
       }
     }
+
+    &:nth-of-type(2n) {
+      &::before {
+        border-left: 0;
+      }
+    }
   }
 }
 
@@ -96,5 +102,5 @@
 }
 
 .customers .line {
-  @include vertical();
+  @include horizontal();
 }

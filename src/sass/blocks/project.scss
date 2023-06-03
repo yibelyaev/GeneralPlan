@@ -18,11 +18,18 @@
   margin-bottom: 20px;
 }
 
+.project__subtitle {
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 36px;
+  }
+}
+
 // Info
 
 .project__info {
   position: relative;
-  margin-bottom: 30px;
 
   @include desktop {
     display: grid;

@@ -4,6 +4,8 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @include tablet {
     padding-left: 20px;
@@ -13,11 +15,12 @@
 
 .footer__container {
   width: 300px;
+  max-width: 1400px;
   margin: auto;
   padding: 0;
 
   @include tablet {
-    width: 600px;
+    width: 100%;
   }
 }
 
@@ -30,6 +33,31 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content;
   }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer__menu {
+  display: none;
+
+  @include desktop {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/-3;
+    width: 240px;
+  }
+}
+
+.footer .menu__list {
+  flex-direction: column;
+  margin-left: 0;
+  padding: 20px;
+}
+
+.footer .menu__link {
+  justify-content: start;
 }
 
 // Logo
@@ -51,6 +79,10 @@
     width: 14px;
     height: 20px;
     left: 1px;
+  }
+
+  @include desktop {
+    grid-column: 3/-1;
   }
 }
 
@@ -105,6 +137,11 @@
     grid-column: 2/-1;
     grid-row: 2/-1;
   }
+
+  @include desktop {
+    grid-column: 3/-1;
+    grid-row: 2/-1;
+  }
 }
 
 .footer__copy {
@@ -118,5 +155,9 @@
 
   @include tablet {
     margin-bottom: 19px;
+  }
+
+  @include desktop {
+    grid-column: 1/2s;
   }
 }

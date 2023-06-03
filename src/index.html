@@ -11,12 +11,12 @@
   <link rel="icon" type="image/svg+xml" sizes="any" href="./images/favicons/any.svg">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#1e1e1e">
   <link rel="stylesheet" href="./css/style.min.css">
   <title>GENERALPLAN</title>
 </head>
 <body class="page__body">
-  <header class="header">
+  <header class="header wrapper">
     <div class="header__logo logo">
       <a class="logo__link" href="">
         <img src="./images/logo.svg" alt="Логотип Генплан.">
@@ -211,8 +211,10 @@
               <div class="cases__item-info">
                 <h3 class="cases__item-title">A case about saving on displaced soils for LSR</h3>
                 <picture>
+                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-1.webp 1x, ./images/cases-desktop-1@2x.webp 2x" type="image/webp">
                   <source srcset="./images/cases-img-1.webp 1x, ./images/cases-img-1@2x.webp 2x" type="image/webp">
-                  <img src="./images/cases-img-1.jpg" srcset="./images/cases-img-1@2x.jpg 2x" decoding="async" width="270" height="318" alt="A case about saving on displaced soils for LSR.">
+                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-1.jpg 1x, ./images/cases-desktop-1@2x.jpg 2x">
+                  <img src="./images/cases-img-1.jpg" srcset="./images/cases-img-1@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
                 </picture>
                 <p class="cases__item-description">One of the ways to save money without loss of quality is to adjust the&nbsp;directive marks at the stage of engineering preparation of the territory</p>
                 <a class="cases__item-button item-button" href="#">
@@ -224,8 +226,10 @@
               <div class="cases__item-info">
                 <h3 class="cases__item-title">A case about designing on the inter-fleet territory</h3>
                 <picture>
+                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-2.webp 1x, ./images/cases-desktop-2@2x.webp 2x" type="image/webp">
                   <source srcset="./images/cases-img-2.webp 1x, ./images/cases-img-2@2x.webp 2x" type="image/webp">
-                  <img src="./images/cases-img-2.jpg" srcset="./images/cases-img-2@2x.jpg 2x" decoding="async" width="270" height="318" alt="A case about saving on displaced soils for LSR.">
+                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-2.jpg 1x, ./images/cases-desktop-2@2x.jpg 2x">
+                  <img src="./images/cases-img-2.jpg" srcset="./images/cases-img-2@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
                 </picture>
                 <p class="cases__item-description">The design of interlot territories is one of the specializations of our company</p>
                 <a class="cases__item-button item-button" href="#">
@@ -355,81 +359,83 @@
     </section>
     <section class="customers" id="customers">
       <div class="customers__wrapper wrapper">
-        <h2 class="customers__title title">08/ customers</h2>
-        <div class="customers__list-inner">
-        <h3 class="customers__heading">architectural studio</h3>
-        <ul class="customers__list product-list">
-          <li class="customers__item line">
-            <a class="customers__link" href="https://studio44.ru/" target="_blank" rel="noopener noreferrer" aria-label="Studio-44" >
-              <svg width="50" height="55">
-                <use class="customers__icon" xlink:href="images/sprite.svg#studio-44"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="customers__item line customers__item--buro">
-            <a class="customers__link customers__link--buro" href="https://ostarch.ru/main/projects" target="_blank" rel="noopener noreferrer" aria-label="Buro"></a>
-          </li>
-          <li class="customers__item line">
-            <a class="customers__link" href="https://studio44.ru/" target="_blank" rel="noopener noreferrer" aria-label="Studio-44" >
-            </a>
-          </li>
+        <div class="customers__content">
+          <h2 class="customers__title title">08/ customers</h2>
+          <div class="customers__list-inner">
+          <h3 class="customers__heading">architectural studio</h3>
+          <ul class="customers__list product-list">
             <li class="customers__item line">
-              <a class="customers__link customers__link--spektrum" href="https://spectrum-group.ru/" target="_blank" rel="noopener noreferrer" aria-label="Spektrum" >
-                <svg width="181" height="33">
-                  <use class="customers__icon" xlink:href="images/sprite.svg#spektrum"></use>
+              <a class="customers__link" href="https://studio44.ru/" target="_blank" rel="noopener noreferrer" aria-label="Studio-44" >
+                <svg width="50" height="55">
+                  <use class="customers__icon" xlink:href="images/sprite.svg#studio-44"></use>
                 </svg>
               </a>
             </li>
-        </ul>
-        </div>
-        <div class="customers__list-inner">
-        <h3 class="customers__heading">Developers</h3>
-        <ul class="customers__list product-list customers__list--developers">
-          <li class="customers__item line">
-            <a class="customers__link customers__link--lsp" href="https://www.lsr.ru/"" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
-              <svg width="73" height="23">
-                <use class="customers__icon" xlink:href="images/sprite.svg#lsp"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="customers__item line customers__item--bonava">
-            <a class="customers__link customers__link--bonava" href="https://www.bonava.ru/" target="_blank" rel="noopener noreferrer" aria-label="bonava">
-              <svg width="52" height="30">
-                <use class="customers__icon" xlink:href="images/sprite.svg#bonava"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="customers__item line customers__item--cds">
-            <a class="customers__link customers__link--cds" href="https://www.cds.spb.ru/company/" target="_blank" rel="noopener noreferrer" aria-label="cds">
-              <svg width="120" height="25">
-                <use class="customers__icon-cdc" xlink:href="images/sprite.svg#cds"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="customers__item line customers__item--home">
-            <a class="customers__link customers__link--home" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
-              <svg width="73" height="23">
-                <use class="customers__icon" xlink:href="images/sprite.svg#home"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="customers__item line customers__item--adamant">
-            <a class="customers__link customers__link--adamant" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
-              <svg width="73" height="23">
-                <use class="customers__icon" xlink:href="images/sprite.svg#adamant"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="customers__item line customers__item--kvs">
-            <a class="customers__link customers__link--kvs" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
-              <svg width="73" height="23">
-                <use class="customers__icon" xlink:href="images/sprite.svg#kvs"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="customers__item line customers__item--hidden"></li>
-          <li class="customers__item line customers__item--hidden"></li>
-        </ul>
+            <li class="customers__item line customers__item--buro">
+              <a class="customers__link customers__link--buro" href="https://ostarch.ru/main/projects" target="_blank" rel="noopener noreferrer" aria-label="Buro"></a>
+            </li>
+            <li class="customers__item line customers__item-sssss">
+              <a class="customers__link" href="https://studio44.ru/" target="_blank" rel="noopener noreferrer" aria-label="Studio-44" >
+              </a>
+            </li>
+              <li class="customers__item line customers__item--spektrum">
+                <a class="customers__link customers__link--spektrum" href="https://spectrum-group.ru/" target="_blank" rel="noopener noreferrer" aria-label="Spektrum" >
+                  <svg width="181" height="33">
+                    <use class="customers__icon" xlink:href="images/sprite.svg#spektrum"></use>
+                  </svg>
+                </a>
+              </li>
+          </ul>
+          </div>
+          <div class="customers__list-inner customers__list-developers">
+          <h3 class="customers__heading">Developers</h3>
+          <ul class="customers__list product-list customers__list--developers">
+            <li class="customers__item line">
+              <a class="customers__link customers__link--lsp" href="https://www.lsr.ru/"" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
+                <svg width="73" height="23">
+                  <use class="customers__icon" xlink:href="images/sprite.svg#lsp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item line customers__item--bonava">
+              <a class="customers__link customers__link--bonava" href="https://www.bonava.ru/" target="_blank" rel="noopener noreferrer" aria-label="bonava">
+                <svg width="52" height="30">
+                  <use class="customers__icon" xlink:href="images/sprite.svg#bonava"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item line customers__item--cds">
+              <a class="customers__link customers__link--cds" href="https://www.cds.spb.ru/company/" target="_blank" rel="noopener noreferrer" aria-label="cds">
+                <svg width="120" height="25">
+                  <use class="customers__icon-cdc" xlink:href="images/sprite.svg#cds"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item line customers__item--home">
+              <a class="customers__link customers__link--home" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
+                <svg width="73" height="23">
+                  <use class="customers__icon" xlink:href="images/sprite.svg#home"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item line customers__item--adamant">
+              <a class="customers__link customers__link--adamant" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
+                <svg width="73" height="23">
+                  <use class="customers__icon" xlink:href="images/sprite.svg#adamant"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item line customers__item--kvs">
+              <a class="customers__link customers__link--kvs" href="https://www.lsr.ru/" aria-label="Studio-44" target="_blank" rel="noopener noreferrer">
+                <svg width="73" height="23">
+                  <use class="customers__icon" xlink:href="images/sprite.svg#kvs"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers__item line customers__item--hidden"></li>
+            <li class="customers__item line customers__item--hidden"></li>
+          </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -440,8 +446,7 @@
           <p class="subscribe__subtitle subtitle subtitle--mark">
             Leave a request for the development of the project and we will contact you
           </p>
-        </div>
-        <form class="form line" action="https://echo.htmlacademy.ru" method="post">
+          <form class="form line" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__field form__field--name">
               <label class="form__label" for="name">
                 <span class="form__heading">First name, Last Name *</span>
@@ -473,6 +478,7 @@
             </fieldset>
             <button class="form__button button" type="submit">submit</button>
         </form>
+        </div>
       </div>
     </section>
   </main>
@@ -506,6 +512,50 @@
             <a class="social__link" href="#">behance</a>
           </li>
         </ul>
+        </div>
+        <div class="footer__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                about
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                area of work
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                benefit
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                cases
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                projects
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                reviews
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                customers
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                contacts
+              </a>
+            </li>
+          </ul>
         </div>
         <p class="footer__copy">© 2007–2023 GeneralPlan</p>
       </div>

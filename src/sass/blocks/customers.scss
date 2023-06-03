@@ -2,6 +2,25 @@
 
 .customers {
   padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 90px;
+  }
+
+  @include desktop {
+    padding-bottom: 120px;
+  }
+}
+
+
+// Content
+
+.customers__content {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: min-content 1fr;
+  }
 }
 
 // Title
@@ -19,6 +38,12 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+.customers__list-developers {
+  @include desktop {
+    grid-column: 2/-1;
   }
 }
 
@@ -68,7 +93,9 @@
 
   &--home,
   &--adamant,
-  &--kvs {
+  &--kvs,
+  &--spektrum,
+  &--sss {
     display: none;
   }
 
@@ -81,7 +108,9 @@
 
     &--home,
     &--adamant,
-    &--kvs {
+    &--kvs,
+    &--spektrum,
+    &--sss {
       display: flex;
     }
 

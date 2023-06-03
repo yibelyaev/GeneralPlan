@@ -8,4 +8,8 @@
   @include tablet {
     padding: 0 20px;
   }
+
+  @include desktop {
+    max-width: 1440px;
+  }
 }
