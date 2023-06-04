@@ -101,12 +101,12 @@
               <div class="direction__info">
                 <h3 class="direction__item-title">Landscape design</h3>
                 <p class="direction__item-description">One of the activities of our company is the development of urban landscape architecture projects.</p>
-                <button class="direction__item-button item-button" type="button">
+                <button class="direction__item-button item-button" type="button" data-open-modal="popover-1">
                   Learn more
                 </button>
               </div>
-              <div class="popover popover__directio">
-                <button class="popover__button" type="button">
+              <div class="popover popover__directio" data-modal="popover-1">
+                <button class="popover__button" type="button" data-close-modal="popover-1">
                   <svg width="28" height="28">
                     <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
                   </svg>
@@ -133,30 +133,31 @@
               <div class="direction__info">
                 <h3 class="direction__item-title">Design of external engineering networks</h3>
                 <p class="direction__item-description">The design of external engineering networks is a key stage in the construction of residential and non residential facilities.</p>
-                <button class="direction__item-button item-button" type="button" data-open-modal="Design">
+                <button class="direction__item-button item-button" type="button" data-open-modal="popover-2">
                   Learn more
                 </button>
               </div>
-              <div class="popover popover__directio" data-modal="Design">
-                <button class="popover__button" data-close-modal="Design" type="button">
+              <div class="popover popover__directio" data-modal="popover-2">
+                <button class="popover__button" data-close-modal="popover-2" type="button">
                   <svg width="28" height="28">
                     <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
                   </svg>
                 </button>
                 <div class="popover__content">
-                  <h2 class="popover_title">Landscape design</h2>
+                  <h2 class="popover_title">Design of external engineering networks</h2>
                   <article class="popover__info line">
                     <h3 class="popover__heading">
-                      One of the activities of our company is the development of urban landscape architecture projects.
+                      The design of external engineering networks is a key stage in the construction of residential and non—residential facilities.
                     </h3>
-                    <p class="popover__subtitle">These can be both landscape concepts and working documentation based on concepts previously created by other contractors.
-                      Each of our projects combines the accumulated experience, the latest trends in the field of landscape design, as well as the wishes of the customer on stylistics, small architectural forms and landscaping.
+                    <p class="popover__subtitle">
+                      More than 10 years of successful work in the construction design market allows us to develop outdoor engineering networks for projects of any degree of complexity. We can act as the chief designer, or work on the project as a subcontractor.
                     </p>
                   </article>
                   <div class="popover__list">
-                    <p class="popover__text line">Concept development: selection of the style of the project, development of an improvement plan, placement of small architectural forms and preparation of visualizations.</p>
-                    <p class="popover__text line">Concept development: selection of the style of the project, development of an improvement plan, placement of small architectural forms and preparation of visualizations.</p>
-                    <p class="popover__text line">Concept development: selection of the style of the project, development of an improvement plan, placement of small architectural forms and preparation of visualizations.</p>
+                    <p class="popover__text line">Development of schematic diagrams of engineering networks and coordination in departments</p>
+                    <p class="popover__text line">Development of project documentation in accordance with the Decree of the Government of the Russian Federation of 16.02.2008 No. 87 "On the composition of sections of project documentation and requirements for their content"</p>
+                    <p class="popover__text line">Development of working documentation in accordance with GOST R 21.101-2020, consisting of the following sets of working drawings intended for the production of construction and installation works</p>
+                    <p class="popover__text line">Development of working documentation in accordance with GOST R 21.101-2020, consisting of the following sets of working drawings intended for the production of construction and installation works</p>
                   </div>
                 </div>
               </div>
@@ -164,9 +165,33 @@
             <li class="direction__item line">
               <div class="direction__info">
                 <h3 class="direction__item-title">general plan</h3>
-                <button class="direction__item-button item-button" type="button">
+                <p class="direction__item-description">The general plan is an integral part of each project, on the basis of which planning, construction, reconstruction and other types of urban development of territories are carried out.</p>
+                <button class="direction__item-button item-button" type="button" data-open-modal="popover-3">
                   Learn more
                 </button>
+              </div>
+              <div class="popover popover__directio" data-modal="popover-3">
+                <button class="popover__button" data-close-modal="popover-3" type="button">
+                  <svg width="28" height="28">
+                    <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
+                  </svg>
+                </button>
+                <div class="popover__content">
+                  <h2 class="popover_title">general plan</h2>
+                  <article class="popover__info line">
+                    <h3 class="popover__heading">
+                      Preparation of ROM and GP sections is the main specialization of our company.
+                    </h3>
+                    <p class="popover__subtitle">
+                      The presence of 5 general planners in the staff allows you to carry out projects of different scales and levels of complexity. We develop a master plan for residential and non-residential facilities, as well as recreational areas, industrial and agricultural facilities. We give a guarantee of obtaining a positive expert opinion.
+                    </p>
+                  </article>
+                  <div class="popover__list">
+                    <p class="popover__text line">At the stage of "Project documentation" development of section 2 "Scheme of the planning organization of the land plot" (ROM).</p>
+                    <p class="popover__text line">At the stage of "Working documentation" development of the main set of working drawings of the GP brand.</p>
+                    <p class="popover__text line">Technical support of project documentation with approvals in departments and expertise.</p>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
@@ -261,9 +286,79 @@
                   <img src="./images/cases-img-1.jpg" srcset="./images/cases-img-1@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
                 </picture>
                 <p class="cases__item-description">One of the ways to save money without loss of quality is to adjust the&nbsp;directive marks at the stage of engineering preparation of the territory</p>
-                <button class="cases__item-button item-button" type="button">
+                <button class="cases__item-button item-button" type="button" data-open-modal="popover-4">
                   Learn more
                 </button>
+              </div>
+              <div class="popover popover__directio" data-modal="popover-4">
+                <button class="popover__button" data-close-modal="popover-4" type="button">
+                  <svg width="28" height="28">
+                    <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
+                  </svg>
+                </button>
+                <div class="popover__content">
+                  <h2 class="popover_title">A case about designing on the inter-fleet territory</h2>
+                  <article class="popover__info line">
+                    <h3 class="popover__heading">
+                      The design of external engineering networks is a key stage in the construction of residential and non—residential facilities.
+                    </h3>
+                  </article>
+                  <div class="popover__list">
+                    <h4 class="popover__list-heading">
+                      An integrated approach to the design of the inter-site territory includes coordination, control and coordination of design decisions on the master plan and external engineering networks of various design organizations in the quarterly development. This eliminates the difficulties that developers face when working with different contractors when building blocks and gives the following advantages:
+                    </h4>
+                    <ul class="popover__list-cases">
+                      <li class="popover__item">
+                        reducing the number of errors in the work;
+                      </li>
+                      <li class="popover__item">
+                        saving time on coordination of documentation between contractors;
+                      </li>
+                      <li class="popover__item">
+                        simplification of control by the customer;
+                      </li>
+                      <li class="popover__item">
+                        reduction of the project implementation period.
+                      </li>
+                      <li class="popover__item">
+                        What does the project of the interlot territory include?
+                      </li>
+                      <li class="popover__item">
+                        the development of the ROM section at the “P” stage and a set of working drawings of the GP brand at the “RD” stage, including:
+                      </li>
+                      <li class="popover__item">
+                        the development of a consolidated plan of intra-block engineering networks;
+                      </li>
+                      <li class="popover__item">
+                        design of intra-block engineering networks;
+                      </li>
+                      <li class="popover__item">
+                        design of engineering structures.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="popover__list">
+                    <h4 class="popover__list-heading">
+                      We have been developing a project of an interlot territory for a residential quarter at:
+                    </h4>
+                    <p>St. Petersburg, Blucher Ave., 12</p>
+                    <span>
+                      The project consisted of:
+                    </span>
+                    <ul class="popover__list-cases">
+                      <li class="popover__item">
+                        development of the ROM section at the “P” stage and a set of working drawings of the GP brand at the “RD” stage for the interlot territory
+                      </li>
+                      <li class="popover__item">
+                        linking and coordinating design solutions for the general plan of the interlot territory and adjacent sites of various developers
+                      </li>
+                      <li class="popover__item">
+                        linking and coordinating design solutions of third-party contractors for main engineering networks in the interlot territory
+                      </li>
+                      <img src="./images/popover-4.png" srcset="./images/popover-4@2x.png 2x" width="188" height="163" alt="">
+                    </ul>
+                  </div>
+                </div>
               </div>
             </li>
             <li class="cases__item cases__item--design line">
@@ -276,9 +371,33 @@
                   <img src="./images/cases-img-2.jpg" srcset="./images/cases-img-2@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
                 </picture>
                 <p class="cases__item-description">The design of interlot territories is one of the specializations of our company</p>
-                <button class="cases__item-button item-button" type="button">
+                <button class="cases__item-button item-button" type="button" data-open-modal="popover-5">
                   Learn more
                 </button>
+              </div>
+              <div class="popover popover__directio" data-modal="popover-5">
+                <button class="popover__button" data-close-modal="popover-5" type="button">
+                  <svg width="28" height="28">
+                    <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
+                  </svg>
+                </button>
+                <div class="popover__content">
+                  <h2 class="popover_title">Design of external engineering networks</h2>
+                  <article class="popover__info line">
+                    <h3 class="popover__heading">
+                      The design of external engineering networks is a key stage in the construction of residential and non—residential facilities.
+                    </h3>
+                    <p class="popover__subtitle">
+                      More than 10 years of successful work in the construction design market allows us to develop outdoor engineering networks for projects of any degree of complexity. We can act as the chief designer, or work on the project as a subcontractor.
+                    </p>
+                  </article>
+                  <div class="popover__list">
+                    <p class="popover__text line">Development of schematic diagrams of engineering networks and coordination in departments</p>
+                    <p class="popover__text line">Development of project documentation in accordance with the Decree of the Government of the Russian Federation of 16.02.2008 No. 87 "On the composition of sections of project documentation and requirements for their content"</p>
+                    <p class="popover__text line">Development of working documentation in accordance with GOST R 21.101-2020, consisting of the following sets of working drawings intended for the production of construction and installation works</p>
+                    <p class="popover__text line">Development of working documentation in accordance with GOST R 21.101-2020, consisting of the following sets of working drawings intended for the production of construction and installation works</p>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
@@ -602,6 +721,6 @@
       </div>
     </div>
   </footer>
-  <script src="./js/scripts.js"></script>
+  <script src="./js/scripts.js" type="module"></script>
 </body>
 </html>

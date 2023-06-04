@@ -7,18 +7,11 @@
   position: absolute;
   background-color: $basic-black;
   top: 0;
-  left: 1px;
   padding: 40px;
   display: none;
 
-  @include tablet {
-    right: 50%;
-    transform: translateX(-50%);
-  }
-
   @include desktop {
     width: 769px;
-    right: 50%;
   }
 }
 
@@ -33,8 +26,8 @@
   }
 }
 
-.popover--open {
-  display: block;
+.is-active {
+  display: grid;
 }
 
 .popover__button {
@@ -50,7 +43,6 @@
 
 .popover__content {
   display: grid;
-  padding: 20px;
 
   @include desktop {
     grid-template-rows: min-content min-content 1fr;
@@ -74,6 +66,7 @@
 }
 
 .popover__heading {
+  font-family: "Inter", sans-serif;
   margin: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -89,6 +82,7 @@
 }
 
 .popover__subtitle {
+  font-family: "Inter", sans-serif;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -104,6 +98,7 @@
 }
 
 .popover__text {
+  font-family: "Inter", sans-serif;
   position: relative;
   margin: 0;
   font-weight: 400;
@@ -120,8 +115,74 @@
 
 .popover__list {
   display: grid;
+  padding-bottom: 20px;
+  padding-top: 20px;
 
   @include desktop {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+
+.popover__list-cases {
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.popover__List-cases li {
+  &::marker {
+    background-color: $basic-white;
+  }
+}
+
+.popover__list-heading {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25em;
+  color: inherit;
+}
+
+.popover__list p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25em;
+  color: inherit;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.popover__list span {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25em;
+  color: inherit;
+  margin-bottom: 5px;
+}
+
+.popover__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3em;
+  color: inherit;
+  opacity: 0.7;
+}
+
+
+.popover__card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+.popover__list-cases img {
+  width: 100%;
+  margin-top: 10px;
 }
