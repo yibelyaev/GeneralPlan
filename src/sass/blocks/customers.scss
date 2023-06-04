@@ -95,7 +95,7 @@
   &--adamant,
   &--kvs,
   &--spektrum,
-  &--sss {
+  &--b2 {
     display: none;
   }
 
@@ -110,7 +110,7 @@
     &--adamant,
     &--kvs,
     &--spektrum,
-    &--sss {
+    &--b2 {
       display: flex;
     }
 
@@ -189,6 +189,38 @@
     }
   }
 
+  &--adamant {
+    background-image: url("../images/adamant.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 56px;
+    padding-bottom: 58px;
+    padding-left: 26px;
+    padding-right: 24px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/adamant@2x.png");
+      background-size: 125px auto;
+      min-width: 125px;
+    }
+  }
+
+  &--b2 {
+    background-image: url("../images/52.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 56px;
+    padding-bottom: 58px;
+    padding-left: 26px;
+    padding-right: 24px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/52@2x.png");
+      background-size: 50px auto;
+      min-width: 50px;
+    }
+  }
+
   &--lsp {
     padding: 50px;
   }
@@ -206,6 +238,10 @@
 
   @include tablet {
     height: 100%;
+
+    &--spektrum {
+      padding: 10px;
+    }
   }
 
   @include desktop {

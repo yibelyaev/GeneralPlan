@@ -14,6 +14,14 @@
 .advantages__info {
   position: relative;
 
+  @include tablet {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   @include desktop {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -44,11 +52,6 @@
 .advantages__list {
   @include overlay;
   display: grid;
-  margin-bottom: 70px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
