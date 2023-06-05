@@ -10,6 +10,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
   <link rel="icon" type="image/svg+xml" sizes="any" href="./images/favicons/any.svg">
   <link rel="manifest" href="/manifest.json">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#1e1e1e">
   <link rel="stylesheet" href="./css/style.min.css">
@@ -283,147 +287,146 @@
           <p class="cases__subtitle subtitle subtitle--mark">
             We develop projects of various scales and purposes: from a transformer substation to a residential area
           </p>
-          <ul class="cases__list">
-            <li class="cases__item line cases__item--active">
-              <div class="cases__item-info">
-                <h3 class="cases__item-title">A case about saving on displaced soils for LSR</h3>
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-1.webp 1x, ./images/cases-desktop-1@2x.webp 2x" type="image/webp">
-                  <source srcset="./images/cases-img-1.webp 1x, ./images/cases-img-1@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-1.jpg 1x, ./images/cases-desktop-1@2x.jpg 2x">
-                  <img src="./images/cases-img-1.jpg" srcset="./images/cases-img-1@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
-                </picture>
-                <p class="cases__item-description">One of the ways to save money without loss of quality is to adjust the&nbsp;directive marks at the stage of engineering preparation of the territory</p>
-                <button class="cases__item-button item-button" type="button" data-open-modal="popup-4">
-                  Learn more
-                </button>
-              </div>
-              <div class="popup" data-modal="popup-4">
-                <button class="popup__button" type="button" data-close-modal="popup-4">
-                  <svg width="28" height="28">
-                    <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
-                  </svg>
-                </button>
-                <div class="popup__content">
-                  <h2 class="popup__title">A case about saving on displaced soils for LSR</h2>
-                  <div class="popup__grid popup__grid-cases">
-                    <h3 class="popup__lead popup__lead--cases line">
-                      Large scale development of the territory is always a big financial burden for the developer.
-                    </h3>
-                    <span class="popup__description popup__description--opacity line">
-                      One of the nonobviousness but effective ways to save money without loss of quality is to adjust the directive marks at the stage of engineering preparation of the territory.
-                      Rough vertical layout with incorrect directive marks a few centimeters above the existing relief leads to an increase in the developer's costs.
-                      Correction of directive marks at the stage of engineering preparation of the territory is you know how which saves up to 70% of customers' funds on the removal of earth masses.
-                    </span>
-                    <span class="popup__description popup__description-list popup__description--opacity line">
-                      One of the nonobviousness but effective ways to save money without loss of quality is to adjust the directive marks at the stage of engineering preparation of the territory.
-                      Rough vertical layout with incorrect directive marks a few centimeters above the existing relief leads to an increase in the developer's costs.
-                      Correction of directive marks at the stage of engineering preparation of the territory is you know how which saves up to 70% of customers' funds on the removal of earth masses.
-                      <ul class="popup__list">
-                        <li>
-                          district-scale
-                        </li>
-                        <li>
-                          development quarte rly development
-                        </li>
-                        <li>
-                          terminal and production arrays
-                        </li>
-                      </ul>
-                    </span>
+          <ul class="cases__list swiper">
+            <div class="swiper-wrapper">
+              <li class="cases__item line swiper-slide">
+                <div class="cases__item-info">
+                  <h3 class="cases__item-title">A case about saving on displaced soils for LSR</h3>
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./images/cases-desktop-1.webp 1x, ./images/cases-desktop-1@2x.webp 2x" type="image/webp">
+                    <source srcset="./images/cases-img-1.webp 1x, ./images/cases-img-1@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1440px)" srcset="./images/cases-desktop-1.jpg 1x, ./images/cases-desktop-1@2x.jpg 2x">
+                    <img src="./images/cases-img-1.jpg" srcset="./images/cases-img-1@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
+                  </picture>
+                  <p class="cases__item-description">One of the ways to save money without loss of quality is to adjust the&nbsp;directive marks at the stage of engineering preparation of the territory</p>
+                  <button class="cases__item-button item-button" type="button" data-open-modal="popup-4">
+                    Learn more
+                  </button>
+                </div>
+                <div class="popup" data-modal="popup-4">
+                  <button class="popup__button" type="button" data-close-modal="popup-4">
+                    <svg width="28" height="28">
+                      <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
+                    </svg>
+                  </button>
+                  <div class="popup__content">
+                    <h2 class="popup__title">A case about saving on displaced soils for LSR</h2>
+                    <div class="popup__grid popup__grid-cases">
+                      <h3 class="popup__lead popup__lead--cases line">
+                        Large scale development of the territory is always a big financial burden for the developer.
+                      </h3>
+                      <span class="popup__description popup__description--opacity line">
+                        One of the nonobviousness but effective ways to save money without loss of quality is to adjust the directive marks at the stage of engineering preparation of the territory.
+                        Rough vertical layout with incorrect directive marks a few centimeters above the existing relief leads to an increase in the developer's costs.
+                        Correction of directive marks at the stage of engineering preparation of the territory is you know how which saves up to 70% of customers' funds on the removal of earth masses.
+                      </span>
+                      <span class="popup__description popup__description-list popup__description--opacity line">
+                        One of the nonobviousness but effective ways to save money without loss of quality is to adjust the directive marks at the stage of engineering preparation of the territory.
+                        Rough vertical layout with incorrect directive marks a few centimeters above the existing relief leads to an increase in the developer's costs.
+                        Correction of directive marks at the stage of engineering preparation of the territory is you know how which saves up to 70% of customers' funds on the removal of earth masses.
+                        <ul class="popup__list">
+                          <li>
+                            district-scale
+                          </li>
+                          <li>
+                            development quarte rly development
+                          </li>
+                          <li>
+                            terminal and production arrays
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="cases__item line">
-              <div class="cases__item-info">
-                <h3 class="cases__item-title">A case about designing on the inter-fleet territory</h3>
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-2.webp 1x, ./images/cases-desktop-2@2x.webp 2x" type="image/webp">
-                  <source srcset="./images/cases-img-2.webp 1x, ./images/cases-img-2@2x.webp 2x" type="image/webp">
-                  <source media="(min-width: 1440px)" srcset="./images/cases-desktop-2.jpg 1x, ./images/cases-desktop-2@2x.jpg 2x">
-                  <img src="./images/cases-img-2.jpg" srcset="./images/cases-img-2@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
-                </picture>
-                <p class="cases__item-description">The design of interlot territories is one of the specializations of our company</p>
-                <button class="cases__item-button item-button" type="button" data-open-modal="popup-5">
-                  Learn more
-                </button>
-              </div>
-              <div class="popup" data-modal="popup-5">
-                <button class="popup__button" type="button" data-close-modal="popup-5">
-                  <svg width="28" height="28">
-                    <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
-                  </svg>
-                </button>
-                <div class="popup__content">
-                  <h2 class="popup__title">A case about designing on the inter-fleet territory</h2>
-                  <div class="popup__grid popup__grid-cases">
-                    <h3 class="popup__lead popup__lead--cases line">
-                      The design of interlot territories is one of the specializations of our company.
-                    </h3>
-                    <span class="popup__description popup__description--opacity line">
-                      An integrated approach to the design of the inter-site territory includes coordination, control and coordination of design decisions on the master plan and external engineering networks of various design organizations in the quarterly development. This eliminates the difficulties that developers face when working with different contractors when building blocks and gives the following advantages:
-                      <ul class="popup__list">
-                        <li>
-                          reducing the number of errors in the work;
-                        </li>
-                        <li>
-                          saving time on coordination of documentation between contractors;
-                        </li>
-                        <li>
-                          simplification of control by the customer;
-                        </li>
-                        <li>
-                          reduction of the project implementation period.
-                        </li>
-                        <li>
-                          What does the project of the interlot territory include?
-                        </li>
-                        <li>
-                          the development of the ROM section at the “P” stage and a set of working drawings of the GP brand at the “RD” stage, including:
-                        </li>
-                        <li>
-                          the development of a consolidated plan of intra-block engineering networks;
-                        </li>
-                        <li>
-                          design of intra-block engineering networks;
-                        </li>
-                        <li>
-                          design of engineering structures.
-                        </li>
-                      </ul>
-                    </span>
-                    <span class="popup__description popup__description-list popup__description--opacity line">
-                      One of the nonobviousness but effective ways to save money without loss of quality is to adjust the directive marks at the stage of engineering preparation of the territory.
-                      Rough vertical layout with incorrect directive marks a few centimeters above the existing relief leads to an increase in the developer's costs.
-                      Correction of directive marks at the stage of engineering preparation of the territory is you know how which saves up to 70% of customers' funds on the removal of earth masses.
-                      <ul class="popup__list">
-                        <li>
-                          development of the ROM section at the “P” stage and a set of working drawings of the GP brand at the “RD” stage for the interlot territory
-                        </li>
-                        <li>
-                          linking and coordinating design solutions for the general plan of the interlot territory and adjacent sites of various developers
-                        </li>
-                        <li>
-                          linking and coordinating design solutions of third-party contractors for main engineering networks in the interlot territory
-                        </li>
-                        <picture>
-                          <source type="image/webp" media="(min-width: 640px)" srcset="./images/popover-tablet-4.webp 1x, ./images/popover-tablet-4@2x.webp 2x">
-                          <source type="image/webp" srcset="./images/popover-4.webp 1x, ./images/popover-4@2x.webp 2x">
-                          <source media="(min-width: 640px)" srcset="./images/popover-tablet-4.png 1x, ./images/popover-tablet-4@2x.png 2x">
-                          <img src="./images/popover-4.png" srcset="./images/popover-4@2x.png 2x" alt="Plan.">
-                        </picture>
-                      </ul>
-                    </span>
+              </li>
+              <li class="cases__item swiper-slide line">
+                <div class="cases__item-info">
+                  <h3 class="cases__item-title">A case about designing on the inter-fleet territory</h3>
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./images/cases-desktop-2.webp 1x, ./images/cases-desktop-2@2x.webp 2x" type="image/webp">
+                    <source srcset="./images/cases-img-2.webp 1x, ./images/cases-img-2@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1440px)" srcset="./images/cases-desktop-2.jpg 1x, ./images/cases-desktop-2@2x.jpg 2x">
+                    <img src="./images/cases-img-2.jpg" srcset="./images/cases-img-2@2x.jpg 2x" decoding="async" alt="A case about saving on displaced soils for LSR.">
+                  </picture>
+                  <p class="cases__item-description">The design of interlot territories is one of the specializations of our company</p>
+                  <button class="cases__item-button item-button" type="button" data-open-modal="popup-5">
+                    Learn more
+                  </button>
+                </div>
+                <div class="popup" data-modal="popup-5">
+                  <button class="popup__button" type="button" data-close-modal="popup-5">
+                    <svg width="28" height="28">
+                      <use class="popover__icon" xlink:href="images/sprite.svg#cross"></use>
+                    </svg>
+                  </button>
+                  <div class="popup__content">
+                    <h2 class="popup__title">A case about designing on the inter-fleet territory</h2>
+                    <div class="popup__grid popup__grid-cases">
+                      <h3 class="popup__lead popup__lead--cases line">
+                        The design of interlot territories is one of the specializations of our company.
+                      </h3>
+                      <span class="popup__description popup__description--opacity line">
+                        An integrated approach to the design of the inter-site territory includes coordination, control and coordination of design decisions on the master plan and external engineering networks of various design organizations in the quarterly development. This eliminates the difficulties that developers face when working with different contractors when building blocks and gives the following advantages:
+                        <ul class="popup__list">
+                          <li>
+                            reducing the number of errors in the work;
+                          </li>
+                          <li>
+                            saving time on coordination of documentation between contractors;
+                          </li>
+                          <li>
+                            simplification of control by the customer;
+                          </li>
+                          <li>
+                            reduction of the project implementation period.
+                          </li>
+                          <li>
+                            What does the project of the interlot territory include?
+                          </li>
+                          <li>
+                            the development of the ROM section at the “P” stage and a set of working drawings of the GP brand at the “RD” stage, including:
+                          </li>
+                          <li>
+                            the development of a consolidated plan of intra-block engineering networks;
+                          </li>
+                          <li>
+                            design of intra-block engineering networks;
+                          </li>
+                          <li>
+                            design of engineering structures.
+                          </li>
+                        </ul>
+                      </span>
+                      <span class="popup__description popup__description-list popup__description--opacity line">
+                        One of the nonobviousness but effective ways to save money without loss of quality is to adjust the directive marks at the stage of engineering preparation of the territory.
+                        Rough vertical layout with incorrect directive marks a few centimeters above the existing relief leads to an increase in the developer's costs.
+                        Correction of directive marks at the stage of engineering preparation of the territory is you know how which saves up to 70% of customers' funds on the removal of earth masses.
+                        <ul class="popup__list">
+                          <li>
+                            development of the ROM section at the “P” stage and a set of working drawings of the GP brand at the “RD” stage for the interlot territory
+                          </li>
+                          <li>
+                            linking and coordinating design solutions for the general plan of the interlot territory and adjacent sites of various developers
+                          </li>
+                          <li>
+                            linking and coordinating design solutions of third-party contractors for main engineering networks in the interlot territory
+                          </li>
+                          <picture>
+                            <source type="image/webp" media="(min-width: 640px)" srcset="./images/popover-tablet-4.webp 1x, ./images/popover-tablet-4@2x.webp 2x">
+                            <source type="image/webp" srcset="./images/popover-4.webp 1x, ./images/popover-4@2x.webp 2x">
+                            <source media="(min-width: 640px)" srcset="./images/popover-tablet-4.png 1x, ./images/popover-tablet-4@2x.png 2x">
+                            <img src="./images/popover-4.png" srcset="./images/popover-4@2x.png 2x" alt="Plan.">
+                          </picture>
+                        </ul>
+                      </span>
+                    </div>
                   </div>
                 </div>
+              </li>
+              <div class="range swiper-scrollbar">
               </div>
-            </li>
-            <div class="range">
-              <button class="range__button" type="button">
-                <span class="visually-hidden">Дальше</span>
-              </button>
-        </div>
+            </div>
           </ul>
           <a class="cases__button button" href="#">
             Discuss the project
