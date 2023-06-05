@@ -53,15 +53,15 @@
 
 .cases__item {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
 
-  &--design {
-    display: none;
+  &--active {
+    display: flex;
+  }
 
-    @include tablet {
-      display: flex;
-    }
+  @include tablet {
+    display: flex;
   }
 }
 

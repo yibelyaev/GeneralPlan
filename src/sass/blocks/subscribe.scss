@@ -20,7 +20,10 @@
 // Subtitle
 
 .subscribe__subtitle {
+  margin-bottom: 20px;
+
   @include desktop {
+    margin-bottom: 27px;
     grid-column: 2/-1;
   }
 }
