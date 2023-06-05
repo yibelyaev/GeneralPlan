@@ -85,17 +85,13 @@
 
 .customers__item {
   position: relative;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 
-  &--home,
-  &--adamant,
-  &--kvs,
-  &--spektrum,
-  &--b2 {
-    display: none;
+  &--active {
+    display: flex;
   }
 
   &--hidden {
@@ -104,14 +100,7 @@
 
   @include tablet {
     height: 100%;
-
-    &--home,
-    &--adamant,
-    &--kvs,
-    &--spektrum,
-    &--b2 {
-      display: flex;
-    }
+    display: flex;
 
     &--buro {
       grid-column: 1/2;
