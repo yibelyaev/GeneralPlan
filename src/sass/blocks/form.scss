@@ -20,7 +20,7 @@
 
 .form__field {
   display: grid;
-  margin-bottom: 8px;
+  margin-bottom: 17px;
 
   &:last-of-type {
     margin-bottom: 13px;
@@ -93,6 +93,7 @@
   min-height: 88px;
 
   @include desktop {
+    width: 527px;
     height: 166px;
     padding: 11px;
   }
