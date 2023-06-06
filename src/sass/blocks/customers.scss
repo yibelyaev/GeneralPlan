@@ -52,6 +52,7 @@
   position: relative;
   display: grid;
   align-items: center;
+  padding-bottom: 20px;
 
   @include tablet {
     grid-template-columns: 50% 50%;
@@ -85,14 +86,10 @@
 
 .customers__item {
   position: relative;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-
-  &--active {
-    display: flex;
-  }
 
   &--hidden {
     display: none;
