@@ -9,12 +9,12 @@
   &--index {
     background-image: url("../images/generalplan.jpg");
     background-repeat: no-repeat;
-    background-position: center 309px;
+    background-position: center 256px;
     padding-bottom: 400px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/generalplan@2x.jpg");
-      background-size: 90% 386px;
+      background-size: 300px 386px;
     }
 
     @include tablet {
