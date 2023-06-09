@@ -38,6 +38,7 @@
 
   @include desktop {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
   }
 }
 
@@ -60,7 +61,7 @@
 .footer .menu__list {
   flex-direction: column;
   margin-left: 0;
-  padding: 20px;
+  padding: 20px 44px 51px 26px;
 }
 
 .footer .menu__link {
@@ -147,7 +148,7 @@
 
   @include desktop {
     grid-column: 3/-1;
-    grid-row: 2/-1;
+    grid-row: 1/-1;
   }
 }
 
