@@ -40,6 +40,12 @@
 
 
 @mixin horizontal {
+  &:nth-of-type(1) {
+    &::after {
+      border-top: 2px solid #9b9b9b;
+    }
+  }
+
   @include tablet() {
     &:nth-of-type(1) {
       &::after {
@@ -128,6 +134,10 @@
 }
 
 .project .line {
+  &::after {
+    border-top: 2px solid #9b9b9b;
+  }
+
   @include vertical();
 }
 
