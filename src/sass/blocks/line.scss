@@ -136,9 +136,12 @@
 .project .line {
   &::after {
     border-top: 2px solid #9b9b9b;
+    border-bottom: 2px solid #9b9b9b;
   }
 
-  @include vertical();
+  &::before {
+    border-left: 2px solid #9b9b9b;
+  }
 }
 
 .reviews .line {

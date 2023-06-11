@@ -45,6 +45,12 @@
 
 .direction__item {
   position: relative;
+
+  @include desktop {
+    &:nth-of-type(3) {
+      margin: -2px;
+    }
+  }
 }
 
 .direction__item:nth-child(2n) .line {
