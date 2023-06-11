@@ -33,12 +33,14 @@
   @include tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr min-content;
   }
 
   @include desktop {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    padding-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0;
+    grid-template-columns: 1fr 284px 1fr;
   }
 }
 
@@ -50,7 +52,6 @@
     display: grid;
     grid-column: 2/3;
     grid-row: 1/-3;
-    width: 240px;
   }
 }
 
@@ -72,6 +73,11 @@
 
 .footer__logo {
   margin-bottom: 35px;
+
+  @include desktop {
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
 }
 
 // Addres
@@ -89,12 +95,22 @@
     left: 1px;
   }
 
+  @include tablet {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+
   @include desktop {
     grid-column: 3/-1;
+    grid-row: -3/2;
+    padding-left: 22px;
+    margin-bottom: 0;
+    padding-top: 20px;
   }
 }
 
 .footer__address p {
+  padding: 0;
   padding-left: 20px;
   position: relative;
   margin: 0;
@@ -143,12 +159,15 @@
   @include tablet {
     margin-bottom: 19px;
     grid-column: 2/-1;
-    grid-row: 2/-1;
+    grid-row: 2/2;
   }
 
   @include desktop {
-    grid-column: 3/-1;
-    grid-row: 1/-1;
+    grid-column: 3/3;
+    grid-row: -2/2;
+    align-self: flex-end;
+    padding-left: 22px;
+    margin-bottom: 45px;
   }
 }
 
@@ -166,6 +185,16 @@
   }
 
   @include desktop {
-    grid-column: 1/2s;
+    margin-bottom: 45px;
+    grid-column: 1/2;
+    align-self: flex-end;
+  }
+}
+
+.footer__inner .line {
+  @include desktop {
+    &::before {
+      border-left: 2px solid #9b9b9b;
+    }
   }
 }
