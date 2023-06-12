@@ -17,6 +17,7 @@ if (isDesktop) {
 }
 
 window.addEventListener('resize', () => {
+  console.log(isDesktop())
   if (isDesktop) {
     navigation.classList.remove('menu--open')
   }

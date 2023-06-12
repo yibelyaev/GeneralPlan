@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const anchors = document.querySelectorAll('a.[href="#"]')
+const anchors = document.querySelectorAll('.menu__list a')
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {

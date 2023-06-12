@@ -28,7 +28,7 @@ export class ScrollLock {
         block.style.paddingRight = `${this._getScrollbarWidth()}px`;
       });
     }
-    document.body.style.top = `-${this._scrollTop}px`;
+    // document.body.style.top = `-${this._scrollTop}px`;
     document.body.classList.add(this._lockClass);
   }
 

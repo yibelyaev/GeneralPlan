@@ -4,13 +4,17 @@ export const initSwiper = () => {
   // const isNeedSlider = () => !slider && isMobile.matches;
 
   const createSlider = () => {
-  slider = new Swiper('.cases__list', {
+    slider = new Swiper('.cases__list', {
               direction: 'horizontal',
               loop: false,
 
               navigation: {
                 nextEl: '.reviews__button--next',
                 prevEl: '.reviews__button--prev',
+              },
+              scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
               },
             })
   }
@@ -25,50 +29,6 @@ export const initSwiper = () => {
     } else {
       slider.enable()
     }
-    // console.log(slider);
-    // if (!slider && isMobile.matches) {
-    // } else {
-    //   slider.disable();
-
-    // }
   });
-
-
-  // swiper = new Swiper('.swiper', {
-  //   scrollbar: {
-  //     el: '.swiper-scrollbar',
-  //     draggable: true,
-  //   },
-  // });
 }
-
-
-// const swiperReviews = document.querySelector('.cases__list');
-
-// const isMobile = window.matchMedia('max-width: 640px');
-
-// const initSwiper = () => {
-//   if (!isMobile.matches) return;
-
-
-
-//   if (swiperReviews) {
-//     (() =>
-//       new Swiper('.cases__list', { // eslint-disable-line
-//         direction: 'horizontal',
-//         loop: false,
-
-//         navigation: {
-//           nextEl: '.reviews__button--next',
-//           prevEl: '.reviews__button--prev',
-//         },
-//       })
-//     )();
-//   }
-// };
-
-
-
-
-// export { initSwiperReviews };
 

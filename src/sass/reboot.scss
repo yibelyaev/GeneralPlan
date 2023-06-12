@@ -14,3 +14,11 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+body {
+  position: relative;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}

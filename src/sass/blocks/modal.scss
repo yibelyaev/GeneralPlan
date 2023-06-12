@@ -1,28 +1,45 @@
-// popup
+// modal
 
-.popup {
-  width: 100vw;
-  min-height: 574px;
-  z-index: 3;
-  position: absolute;
+.modal {
+  z-index: 10;
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
   background-color: $basic-black;
-  top: 0;
-  left: 0;
-  padding: 40px;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $trans;
 
   @include desktop {
-    width: 1281px;
+    background-color: rgba(0, 0, 0, 0.75);
   }
 }
 
-.is-active {
-  display: grid;
+.modal__inner {
+  position: relative;
 }
 
-.popup__button {
-  margin: 7px 6px;
-  padding: 0;
+.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  padding: 40px;
+  overflow: auto;
+  height: 100vh;
+  background-color: $basic-black;
+
+
+  @include desktop {
+    width: 770px;
+    max-height: 75vh;
+  }
+}
+
+.modal__button {
+  padding: 7px;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -32,7 +49,7 @@
 }
 
 
-.popup__title {
+.modal__title {
   margin: 0;
   margin-bottom: 16px;
   font-family: "Akrobat", sans-serif;
@@ -48,18 +65,18 @@
   }
 }
 
-.popup__grid {
+.modal__grid {
   display: grid;
 }
 
-.popup__info {
+.modal__info {
   position: relative;
   padding: 20px;
 }
 
 // Lead
 
-.popup__lead {
+.modal__lead {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2em;
@@ -85,7 +102,7 @@
   }
 }
 
-.popup__description {
+.modal__description {
   position: relative;
   font-weight: 400;
   font-size: 14px;
@@ -107,7 +124,7 @@
   }
 }
 
-.popup__aside {
+.modal__aside {
   display: grid;
 
   @include desktop {
@@ -121,12 +138,12 @@
   }
 }
 
-.popup__list {
+.modal__list {
   padding: 0;
   margin: 0;
 }
 
-.popup__list li {
+.modal__list li {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.25em;
@@ -134,7 +151,7 @@
   opacity: 0.8;
 }
 
-.popup__aside p {
+.modal__aside p {
   position: relative;
   font-style: normal;
   font-weight: 400;
@@ -149,20 +166,20 @@
   }
 }
 
-.popup__grid-cases {
+.modal__grid-cases {
   @include desktop {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr;
   }
 }
 
-.popup__grid-cases h3 {
+.modal__grid-cases h3 {
   @include desktop {
     grid-column: 1/2;
   }
 }
 
-.popup__description-list {
+.modal__description-list {
   @include desktop {
     grid-column: 2/-1;
     grid-row: 2 span;
@@ -170,19 +187,19 @@
 }
 
 
-.popup__develop-wrapper {
+.modal__develop-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 22px;
 }
 
-.popup__develop {
+.modal__develop {
   @include desktop {
     display: flex;
   }
 }
 
-.popup__develop dt {
+.modal__develop dt {
   margin: 0;
   font-weight: 700;
   font-size: 15px;
@@ -191,7 +208,7 @@
   text-transform: uppercase;
 }
 
-.popup__develop dl {
+.modal__develop dl {
   margin: 0;
   font-weight: 400;
   font-size: 15px;
@@ -202,14 +219,14 @@
 }
 
 
-.popup__grid-project {
+.modal__grid-project {
   @include desktop {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content 1fr;
   }
 }
 
-.popup__project-img {
+.modal__project-img {
   position: relative;
   padding: 20px;
 
@@ -223,6 +240,6 @@
   }
 }
 
-.popup__description-project {
+.modal__description-project {
   padding: 20px;
 }

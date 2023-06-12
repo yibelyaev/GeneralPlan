@@ -176,6 +176,7 @@ export class Modals {
     }
 
     if (this._lockFocus) {
+      console.log('locked')
       this._focusLock.lock('.modal.is-active', this._startFocus);
     }
 
