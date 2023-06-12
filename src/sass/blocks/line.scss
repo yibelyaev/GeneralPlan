@@ -180,3 +180,8 @@
 
   @include horizontal();
 }
+
+.modal .line {
+  @include horizontal();
+  @include vertical();
+}
