@@ -60,7 +60,6 @@
   }
 
   @include desktop {
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
 
     &--developers {
@@ -72,6 +71,10 @@
 .customers .swiper-wrapper {
   @include tablet {
     width: 50%;
+  }
+
+  @include desktop {
+    width: 100%;
   }
 }
 
@@ -90,10 +93,6 @@
 
 .customers__slider {
   margin-bottom: 40px;
-
-  @include desktop {
-    display: grid;
-  }
 }
 
 // Heading
@@ -266,7 +265,11 @@
 
 
 .customers__list--developers .swiper-wrapper {
-  @include desktop {
+  @include tablet {
     width: 33%;
+  }
+
+  @include desktop {
+    width: 100%;
   }
 }
