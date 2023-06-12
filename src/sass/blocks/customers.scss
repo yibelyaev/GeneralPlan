@@ -55,13 +55,10 @@
   padding-bottom: 20px;
 
   @include tablet {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   @include desktop {
-    grid-template-rows: 1fr;
-
     &--developers {
       grid-template-rows: repeat(2, 1fr);
     }
