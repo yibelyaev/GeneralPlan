@@ -110,6 +110,7 @@
   &--cases {
     position: relative;
     padding: 20px;
+    margin-bottom: 0;
   }
 
   &--project {
@@ -182,6 +183,7 @@
   padding: 20px;
 
   @include desktop {
+    margin: -1px;
     font-size: 14px;
   }
 }
@@ -270,6 +272,10 @@
 
 .modal__description-project {
   padding: 20px;
+
+  @include desktop {
+    padding: 40px;
+  }
 }
 
 .modal__description-list-cases {
