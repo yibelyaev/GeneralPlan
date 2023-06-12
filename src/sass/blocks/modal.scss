@@ -46,6 +46,12 @@
     width: 1285px;
     max-height: 75vh;
   }
+
+  &--description {
+    @include desktop {
+      width: 770px;
+    }
+  }
 }
 
 .modal__button {
