@@ -134,7 +134,6 @@
     border-top: 2px solid #9b9b9b;
   }
 
-
   @include horizontal();
 }
 
@@ -175,5 +174,9 @@
 }
 
 .customers .line {
+  &::before {
+    border-left: 2px solid #9b9b9b;
+  }
+
   @include horizontal();
 }
