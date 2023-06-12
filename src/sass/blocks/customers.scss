@@ -50,7 +50,6 @@
 .customers__list {
   @include overlay;
   position: relative;
-  display: grid;
   align-items: center;
   padding-bottom: 20px;
 
@@ -67,6 +66,23 @@
       grid-template-rows: repeat(2, 1fr);
     }
   }
+}
+
+.customers__list--developers {
+  margin: 0;
+  list-style: none;
+  position: relative;
+  padding: 0 0 20px;
+
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.customers__slider {
+  margin-bottom: 40px;
 }
 
 // Heading
@@ -96,7 +112,7 @@
   }
 
   @include tablet {
-    height: 100%;
+    height: 135px;
     display: flex;
 
     &--buro {
@@ -148,13 +164,13 @@
 // Link
 
 .customers__link {
-  padding: 100px;
-  padding-top: 31px;
-  padding-bottom: 38px;
+  //padding: 100px;
+  //padding-top: 31px;
+  //padding-bottom: 38px;
+  height: 115px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   cursor: pointer;
   transition: transform 0.3s ease-in;
 
@@ -162,10 +178,10 @@
     background-image: url("../images/buro.png");
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 56px;
-    padding-bottom: 58px;
-    padding-left: 26px;
-    padding-right: 24px;
+    //padding-top: 56px;
+    //padding-bottom: 58px;
+    //padding-left: 26px;
+    //padding-right: 24px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/buro@2x.png");
@@ -178,10 +194,10 @@
     background-image: url("../images/adamant.png");
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 56px;
-    padding-bottom: 58px;
-    padding-left: 26px;
-    padding-right: 24px;
+    //padding-top: 56px;
+    //padding-bottom: 58px;
+    //padding-left: 26px;
+    //padding-right: 24px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/adamant@2x.png");
@@ -194,10 +210,10 @@
     background-image: url("../images/52.png");
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 56px;
-    padding-bottom: 58px;
-    padding-left: 26px;
-    padding-right: 24px;
+    //padding-top: 56px;
+    //padding-bottom: 58px;
+    //padding-left: 26px;
+    //padding-right: 24px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/52@2x.png");
@@ -205,21 +221,21 @@
       min-width: 50px;
     }
   }
-
-  &--lsp {
-    padding: 50px;
-  }
+  //
+  //&--lsp {
+  //  padding: 50px;
+  //}
 
   &--cds {
-    padding: 40px;
-    padding-top: 59px;
-    padding-bottom: 39px;
+    //padding: 40px;
+    //padding-top: 59px;
+    //padding-bottom: 39px;
   }
-
-  &--bonava {
-    padding-top: 37px;
-    padding-bottom: 59px;
-  }
+  //
+  //&--bonava {
+  //  padding-top: 37px;
+  //  padding-bottom: 59px;
+  //}
 
   @include tablet {
     height: 100%;
@@ -229,11 +245,11 @@
     }
   }
 
-  @include desktop {
-    &--spektrum {
-      padding: 48px 41px 44px 54px;
-    }
-  }
+  //@include desktop {
+  //  &--spektrum {
+  //    padding: 48px 41px 44px 54px;
+  //  }
+  //}
 
   @media (any-hover: hover) {
     &:hover {

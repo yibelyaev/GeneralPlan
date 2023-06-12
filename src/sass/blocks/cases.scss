@@ -30,6 +30,12 @@
   margin-bottom: 20px;
 }
 
+.cases__slider {
+  @include desktop {
+    grid-column: 2/-1;
+  }
+}
+
 
 // List
 
@@ -38,6 +44,7 @@
   position: relative;
   display: grid;
   padding-bottom: 20px;
+  //overflow: visible;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);

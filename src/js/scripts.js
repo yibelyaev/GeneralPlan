@@ -1,13 +1,12 @@
 import {initModals} from './modals/init-modals.js';
 import {initMenu} from './components/menu.js';
-import {initSwiper} from './components/swiper.js';
+import './components/swiper.js';
 
 
 window.addEventListener('DOMContentLoaded', () => {
   initMenu();
   window.addEventListener('load', () => {
     initModals();
-    initSwiper();
   });
 });
 

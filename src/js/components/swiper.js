@@ -1,34 +1,18 @@
-export const initSwiper = () => {
-  let slider = null;
-  const isMobile = window.matchMedia("(max-width: 640px)");
-  // const isNeedSlider = () => !slider && isMobile.matches;
+import {CONFIGS} from "../sliders-configs.js";
 
-  const createSlider = () => {
-    slider = new Swiper('.cases__list', {
-              direction: 'horizontal',
-              loop: false,
+(() => {
+  const sliders = document.querySelectorAll('.swiper');
 
-              navigation: {
-                nextEl: '.reviews__button--next',
-                prevEl: '.reviews__button--prev',
-              },
-              scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-              },
-            })
+  if (!sliders.length) return;
+
+  const initSlider = (slider) => {
+    const configName = slider.dataset.config;
+    const config = CONFIGS[configName];
+
+    if (!config) throw new Error(`no config provided`)
+    const sliderInstance = new Swiper(slider, config)
   }
 
-  if (isMobile.matches) {
-    createSlider()
-  }
-
-  window.addEventListener('resize', () => {
-    if (!isMobile.matches && slider) {
-      slider.disable()
-    } else {
-      slider.enable()
-    }
-  });
-}
+  sliders.forEach(slider => initSlider(slider));
+})();
 
