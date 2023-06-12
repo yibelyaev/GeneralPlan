@@ -8,7 +8,7 @@
   }
 
   @include desktop {
-    padding-bottom: 120px;
+    padding-bottom: 115px;
   }
 }
 
@@ -19,7 +19,7 @@
 
   @include desktop {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
   }
 }
 
@@ -27,4 +27,14 @@
 
 .about__title {
   margin-bottom: 20px;
+
+  @include desktop {
+    margin-top: 5px;
+  }
+}
+
+.about__subtitle {
+  @include desktop {
+    padding-right: 20px;
+  }
 }

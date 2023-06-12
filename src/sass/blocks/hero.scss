@@ -9,7 +9,7 @@
   }
 
   @include desktop {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
 }
 
@@ -36,7 +36,7 @@
 
     @include desktop {
       background-image: url("../images/generalplan-desktop.jpg");
-      background-position: center 155px;
+      background-position: center 144px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../images/generalplan-desktop@2x.jpg");
@@ -85,13 +85,14 @@
 // Button
 .hero__button {
   @include tablet {
-    max-width: 200px;
+    max-width: 216px;
     position: absolute;
     top: 20%;
     justify-self: end;
   }
 
   @include desktop {
-    top: -65px;
+    top: -103px;
+    width: 100%;
   }
 }

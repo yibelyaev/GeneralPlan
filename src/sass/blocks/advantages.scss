@@ -29,7 +29,7 @@
 
   @include desktop {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     margin-bottom: 64px;
 
     &:last-of-type {
@@ -47,10 +47,15 @@
 
 
   @include desktop {
+    margin-bottom: 35px;
     grid-column: 2/-1;
+    padding-right: 215px;
+
+    &--small {
+      padding-right: 0;
+    }
   }
 }
-
 
 // List
 
@@ -102,6 +107,10 @@
   display: flex;
   flex-direction: column;
   padding: 40px 36px 42px 13px;
+
+  @include desktop {
+    padding-bottom: 20px;
+  }
 }
 
 

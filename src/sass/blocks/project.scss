@@ -23,6 +23,7 @@
 
   @include desktop {
     margin-bottom: 36px;
+    padding-right: 100px;
   }
 }
 
@@ -33,7 +34,7 @@
 
   @include desktop {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: min-content 1fr;
   }
 }
@@ -54,6 +55,7 @@
 
   @include desktop {
     grid-column: 2/-1;
+    gap: 0;
   }
 }
 
@@ -108,7 +110,9 @@
   margin-bottom: 30px;
 
   @include desktop {
+    margin-bottom: 10px;
     grid-column: 2/-1;
+    row-gap: 7px;
   }
 }
 
