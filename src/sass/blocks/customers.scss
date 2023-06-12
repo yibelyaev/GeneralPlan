@@ -57,21 +57,11 @@
   @include tablet {
     grid-template-rows: 1fr;
   }
-
-  @include desktop {
-    &--developers {
-      grid-template-rows: repeat(2, 1fr);
-    }
-  }
 }
 
 .customers .swiper-wrapper {
   @include tablet {
     width: 50%;
-  }
-
-  @include desktop {
-    width: 100%;
   }
 }
 
@@ -256,9 +246,5 @@
 .customers__list--developers .swiper-wrapper {
   @include tablet {
     width: 33%;
-  }
-
-  @include desktop {
-    width: 66%;
   }
 }
