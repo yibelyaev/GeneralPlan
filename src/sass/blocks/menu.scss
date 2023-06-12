@@ -88,6 +88,10 @@
     padding-right: 12px;
     padding-left: 11px;
   }
+
+  &:focus-visible {
+    outline: 2px solid rgb(152, 115, 211);
+  }
 }
 
 .menu__button[aria-expanded="false"] .menu__icon-cross {

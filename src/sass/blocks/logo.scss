@@ -7,4 +7,10 @@
 .logo__link {
   width: 131px;
   min-height: 34px;
+
+
+  &:focus-visible {
+    outline: 2px solid rgb(152, 115, 211);
+    outline-offset: 3px;
+  }
 }

@@ -240,6 +240,15 @@
       transform: scale(1.2);
     }
   }
+
+  &:focus-visible {
+    outline: 2px solid rgb(152, 115, 211);
+    outline-offset: 3px;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 

@@ -124,6 +124,7 @@
   }
 }
 
+
 .form__checkbox-input:checked + .form__checkbox-input--mark::after {
   content: "";
   position: absolute;
@@ -135,6 +136,10 @@
   height: 4px;
   border-bottom: 1px solid $basic-white;
   border-left: 1px solid $basic-white;
+}
+
+.form__checkbox-input:focus-visible + span {
+  outline: 2px solid hsl(263, 52%, 64%);
 }
 
 // Lead
