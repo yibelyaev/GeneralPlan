@@ -91,7 +91,7 @@
   margin-bottom: 10px;
   color: inherit;
 
-  @include desktop {
+  @include tablet {
     text-align: left;
   }
 }
@@ -113,6 +113,10 @@
 
 .cases__item-info img {
   margin-bottom: 10px;
+
+  @include desktop {
+    height: 318px;
+  }
 }
 
 .cases__item-button {

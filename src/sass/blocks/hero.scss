@@ -19,6 +19,7 @@
 
     @include tablet {
       background-image: url("../images/generalplan-tablet.jpg");
+      background-size: 90% auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../images/generalplan-tablet@2x.jpg");

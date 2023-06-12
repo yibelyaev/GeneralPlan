@@ -68,6 +68,12 @@
   }
 }
 
+.customers .swiper-wrapper {
+  @include tablet {
+    width: 50%;
+  }
+}
+
 .customers__list--developers {
   margin: 0;
   list-style: none;
@@ -132,6 +138,10 @@
     &--kvs {
       grid-column: 2/2;
       grid-row: 2/1;
+    }
+
+    &:nth-of-type(3) {
+      margin: -1px;
     }
   }
 
@@ -221,21 +231,6 @@
       min-width: 50px;
     }
   }
-  //
-  //&--lsp {
-  //  padding: 50px;
-  //}
-
-  &--cds {
-    //padding: 40px;
-    //padding-top: 59px;
-    //padding-bottom: 39px;
-  }
-  //
-  //&--bonava {
-  //  padding-top: 37px;
-  //  padding-bottom: 59px;
-  //}
 
   @include tablet {
     height: 100%;
@@ -245,15 +240,16 @@
     }
   }
 
-  //@include desktop {
-  //  &--spektrum {
-  //    padding: 48px 41px 44px 54px;
-  //  }
-  //}
-
   @media (any-hover: hover) {
     &:hover {
       transform: scale(1.2);
     }
+  }
+}
+
+
+.customers__list--developers .swiper-wrapper {
+  @include desktop {
+    width: 33%;
   }
 }
