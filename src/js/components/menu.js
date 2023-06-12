@@ -1,25 +1,39 @@
-export const initMenu = () => {
-  const menuButton = document.querySelector('.menu__button');
-  const nav = document.querySelector('.menu')
-const navigation = document.querySelector('nav')
-
-
-menuButton.addEventListener('click', () => {
-  let expanded = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', !expanded);
-  nav.classList.toggle('menu--open')
-})
-
 const isDesktop = () =>  window.matchMedia('(min-width: 1440px)').matches;
 
-if (isDesktop) {
-  navigation.classList.remove('menu--open')
-}
+export const initMenu = () => {
+  const menuButton = document.querySelector('.menu__button');
+  const nav = document.querySelector('.menu');
+  const navigation = document.querySelector('nav');
+  const ACTIVE_CLASS = 'menu--open';
+  let expanded = menuButton.getAttribute('aria-expanded') === 'true';
 
-window.addEventListener('resize', () => {
-  console.log(isDesktop())
+  const toggleMenu = () => {
+    expanded = !expanded;
+    nav.classList.toggle(ACTIVE_CLASS);
+    menuButton.setAttribute('aria-expanded', String(expanded));
+  }
+
+  menuButton.addEventListener('click', toggleMenu)
+
   if (isDesktop) {
     navigation.classList.remove('menu--open')
   }
-})
+
+  window.addEventListener('resize', () => {
+    if (isDesktop) {
+      navigation.classList.remove('menu--open')
+    }
+  })
+
+  nav.addEventListener('click', ({target}) => {
+    const link = target.closest('a');
+    if (!link) return;
+
+    const blockID = link.href;
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    })
+    setTimeout(toggleMenu, 350)
+  })
 }

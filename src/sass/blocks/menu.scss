@@ -31,14 +31,22 @@
 
 .menu__list {
   @include overlay;
-  display: none;
+  display: grid;
   font-family: "Inter", sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $trans;
+  z-index: 3;
+  height: 100vh;
 
   @include desktop {
     display: flex;
     flex-wrap: wrap;
     margin-left: 150px;
+    opacity: 1;
+    pointer-events: all;
     max-width: 850px;
+    height: unset;
   }
 }
 
@@ -47,9 +55,9 @@
 }
 
 .menu--open .menu__list {
-  display: grid;
-  z-index: 3;
-  height: 100vh;
+  //display: grid;
+  opacity: 1;
+  pointer-events: all;
 }
 
 // Item
