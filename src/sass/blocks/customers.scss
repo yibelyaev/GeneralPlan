@@ -73,8 +73,7 @@
 
   .swiper-slide {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
   }
 }
 
@@ -136,7 +135,7 @@
     }
 
     &:nth-of-type(3) {
-      margin: -2px;
+      margin: -1px;
     }
 
     &:nth-of-type(4) {
@@ -252,8 +251,8 @@
 }
 
 
-.customers__list--developers .swiper-wrapper {
-  @include tablet {
-    width: 33%;
-  }
-}
+// .customers__list--developers .swiper-wrapper {
+//   @include tablet {
+//     width: 33%;
+//   }
+// }
