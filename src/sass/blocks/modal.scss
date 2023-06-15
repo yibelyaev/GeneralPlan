@@ -116,10 +116,7 @@
   &--project {
     position: relative;
     padding: 20px;
-
-    @include desktop {
-      margin: -2px;
-    }
+    margin-bottom: 0;
   }
 }
 
@@ -274,6 +271,7 @@
 
 .modal__description-project {
   padding: 20px;
+  margin: -2px;
 
   @include desktop {
     padding: 40px;
@@ -285,3 +283,4 @@
     margin: -2px;
   }
 }
+
