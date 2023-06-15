@@ -260,6 +260,7 @@
   margin: -2px;
 
   @include desktop {
+    margin: -2px;
     grid-row: 2 span;
   }
 
@@ -275,6 +276,7 @@
 
   @include desktop {
     padding: 40px;
+    margin: 0;
   }
 }
 
