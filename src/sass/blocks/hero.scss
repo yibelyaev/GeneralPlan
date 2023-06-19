@@ -22,12 +22,12 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/generalplan@2x.jpg");
-      background-size: 90% 386px;
+      background-size: 95% 386px;
     }
 
     @include tablet {
       background-image: url("../images/generalplan-tablet.jpg");
-      background-size: 90% auto;
+      background-size: 95% auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../images/generalplan-tablet@2x.jpg");

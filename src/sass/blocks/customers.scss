@@ -256,3 +256,16 @@
 //     width: 33%;
 //   }
 // }
+
+.swiper-slide {
+  @include desktop {
+    &--small {
+      display: flex;
+      flex-direction: row;
+
+    li {
+        width: 100%;
+      }
+    }
+  }
+}
