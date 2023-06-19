@@ -134,6 +134,16 @@
     border-top: 2px solid #9b9b9b;
   }
 
+  &::before {
+    border-left: 2px solid #9b9b9b;
+  }
+
+  @include desktop {
+    &:nth-of-type(2n)::before {
+      border-left: 0;
+    }
+  }
+
   @include horizontal();
 }
 
@@ -162,11 +172,8 @@
       border-left: 0;
     }
 
-    &:nth-of-type(1) {
-
-      &::before {
-        border-left: 2px solid #9b9b9b;
-      }
+    &:nth-of-type(1)::before {
+      border-left: 2px solid #9b9b9b;
     }
   }
 
