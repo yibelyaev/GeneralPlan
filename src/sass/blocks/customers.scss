@@ -251,11 +251,26 @@
 }
 
 
-// .customers__list--developers .swiper-wrapper {
-//   @include tablet {
-//     width: 33%;
-//   }
-// }
+.customers__list--developers .swiper-wrapper {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.customers__list--developers .swiper-slide {
+  @include desktop {
+    display: flex;
+    height: 50%;
+  }
+
+  li {
+    @include desktop {
+      width: 100%;
+    }
+  }
+}
 
 .swiper-slide {
   @include desktop {

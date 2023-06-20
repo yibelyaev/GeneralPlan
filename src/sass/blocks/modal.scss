@@ -192,6 +192,10 @@
   @include desktop {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr;
+
+    &:nth-of-type(2n) {
+      margin: -2px;
+    }
   }
 }
 
@@ -268,6 +272,7 @@
   img {
     margin: 0 auto;
     margin-bottom: 10px;
+    width: 100%;
   }
 }
 
@@ -289,6 +294,10 @@
 
 
 .modal__aside .line {
+  &:nth-of-type(2n)::before {
+    border-left: 2px solid #9b9b9b;
+  }
+
   @include desktop {
     &:nth-of-type(1n)::after {
       border-bottom: 2px solid #9b9b9b;
@@ -301,6 +310,10 @@
 }
 
 .modal__grid-cases .line {
+  &:nth-of-type(2n)::before {
+    border-left: 2px solid #9b9b9b;
+  }
+
   @include desktop {
     &:nth-of-type(1n)::after {
       border-bottom: 2px solid #9b9b9b;

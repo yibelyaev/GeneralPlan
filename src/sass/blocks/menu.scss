@@ -89,8 +89,18 @@
     padding-left: 11px;
   }
 
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
   &:focus-visible {
     outline: 2px solid rgb(152, 115, 211);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
