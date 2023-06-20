@@ -64,6 +64,13 @@
   }
 }
 
+.cases__list .line {
+  @include tablet {
+    &:nth-of-type(2n)::before {
+      border-left: 0;
+    }
+  }
+}
 
 // Item
 

@@ -1,4 +1,4 @@
-import {MEDIA} from "./utils/media.js";
+import {MEDIA, MEDIA_REVIEWS} from "./utils/media.js";
 export const CONFIGS = {
   cases: {
     loop: false,
@@ -31,18 +31,18 @@ export const CONFIGS = {
     },
     slideClass: 'reviews__item',
     breakpoints: {
-      768: {
+      638: {
         slidesPerView: 2
       }
     },
     on: {
       resize() {
-        !MEDIA.sm.matches
+        !MEDIA_REVIEWS.sm.matches
           ? this.destroy()
           : this.init();
       },
       init() {
-        if (!MEDIA.sm.matches) {
+        if (!MEDIA_REVIEWS.sm.matches) {
           this.destroy()
         }
       }
