@@ -331,5 +331,9 @@
     &:nth-child(3n)::after {
       border-top: 2px solid #9b9b9b;
     }
+
+    &:nth-child(1)::after {
+      border-bottom: 0;
+    }
   }
 }
